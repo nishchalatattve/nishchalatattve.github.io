@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Access granted");
         // Change the HTML content
         document.body.innerHTML = `<img class="background-image" src="banana.jpg"/>
-        <div class="center-text">Happy Father's Day!</div>
+        <div class="center-text">Happy Mother's Day!</div>
         <button>Update</button> 
         <canvas></canvas>`;
         
