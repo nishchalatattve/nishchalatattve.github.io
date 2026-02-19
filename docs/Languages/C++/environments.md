@@ -1,3 +1,7 @@
+---
+icon: simple/cplusplus
+---
+
 # [Set up a development environment for C++ on Ubuntu](https://documentation.ubuntu.com/ubuntu-for-developers/howto/gcc-setup/#install-gcc)
 C++ is a compiled language.
 The GNU Compiler Collection (GCC) is a set of compilers for programming languages, including C, C++, Assembly, and many more. It is the de facto standard in Linux environments and is used to compile both the GNU toolchain and the Linux kernel.

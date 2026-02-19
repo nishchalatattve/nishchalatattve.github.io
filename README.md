@@ -1,2 +1,4 @@
-# nishchalatattve.github.io
-see [The CPP installationn guide](docs/Notes/Languages/C++/environments.md)
+- Personal Blog (Work in Progress)
+- [Technical Documentation](site)
+
+[//]: # (see [The CPP installationn guide]&#40;docs/Notes/Languages/C++/environments.md&#41;)
