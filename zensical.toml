@@ -13,16 +13,16 @@ copyright = """
 Copyright &copy; 2026 Haoze Pang. This website also contains pages authored by the Zensical team.
 """
 
-nav = [
-#    {"Home" = "index.md"},
-    {"C++" = [
-        "languages/C++/index.md",
-        {"Hello world in C++" = "languages/C++/hello.md" },
-        {"Set up a environment for C++" = "languages/C++/environments.md" },
-    ]},
-    {"Markdown" = "languages/markdown.md"},
-    {"GitHub Repo" = "https://github.com/zensical/docs"}
-]
+#nav = [
+##    {"Home" = "index.md"},
+#    {"C++" = [
+#        "languages/C++/index.md",
+#        {"Hello world in C++" = "languages/C++/hello.md" },
+#        {"Set up a environment for C++" = "languages/C++/environments.md" },
+#    ]},
+#    {"Markdown" = "languages/markdown.md"},
+#    {"GitHub Repo" = "https://github.com/zensical/docs"}
+#]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
