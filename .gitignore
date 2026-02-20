@@ -4,6 +4,7 @@ uv.lock
 
 # IDE and OS files
 .idea
+.cache
 
 # Built files
 site
