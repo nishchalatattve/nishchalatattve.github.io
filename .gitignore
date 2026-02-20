@@ -1,2 +1,9 @@
-.venv/
-.idea/
+# Python files
+.venv
+uv.lock
+
+# IDE and OS files
+.idea
+
+# Built files
+site

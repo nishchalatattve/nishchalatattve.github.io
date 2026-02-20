@@ -18,7 +18,8 @@ for example
 ```commandline
 sudo apt install g++-13
 ```
-An alternative, but common approach is to install the [`build-essential`](https://itsfoss.com/build-essential-ubuntu/) package, which is a collection of common tools including `gcc`, `g++`, and `make`.
+
+An alternative[^1], but common approach is to install the [`build-essential`](https://itsfoss.com/build-essential-ubuntu/) package, which is a collection of common tools including `gcc`, `g++`, and `make`.
 
 ## 2. Installing debuggers (`gdb`)
 The standard debugger developed for GCC is the GNU Debugger (GDB).
@@ -37,3 +38,5 @@ Setting up cmake APT repository from kitware: https://apt.kitware.com/
 ```commandline
 sudo apt-get install cmake
 ```
+
+[^1]: Test footnote.
