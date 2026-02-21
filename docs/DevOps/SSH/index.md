@@ -37,3 +37,10 @@ eval `ssh-agent -s`
 ssh-add ~/.ssh/github
 ssh -T git@github.com
 ```
+To avoid typing the above every time, add the following to `~/.ssh/config`.
+```text
+Host github.com
+  User git
+  IdentityFile ~/.ssh/github
+  AddKeysToAgent yes
+```
