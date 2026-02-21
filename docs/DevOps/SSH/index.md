@@ -1,3 +1,6 @@
+---
+status: new
+---
 # SSH 
 
 ## Generate keys
