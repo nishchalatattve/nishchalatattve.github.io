@@ -1,1 +1,1 @@
-# Testing in C++
+# [GoogleTest](https://google.github.io/googletest/)
