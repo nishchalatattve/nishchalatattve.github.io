@@ -99,55 +99,18 @@ language = "en" # Read more at https://zensical.org/docs/setup/language/
 features = [
     "announce.dismiss",
 
-    # If you have a repository configured and turn on this feature, Zensical
-    # will generate an edit button for the page. This works for common
-    # repository hosting services.
-    # https://zensical.org/docs/setup/repository/#content-actions
-    #"content.action.edit",
+    "content.action.edit",
+    "content.action.view",
 
-    # If you have a repository configured and turn on this feature, Zensical
-    # will generate a button that allows the user to view the Markdown
-    # code for the current page.
-    # https://zensical.org/docs/setup/repository/#content-actions
-    #"content.action.view",
-
-    # Code annotations allow you to add an icon with a tooltip to your
-    # code blocks to provide explanations at crucial points.
-    # https://zensical.org/docs/authoring/code-blocks/#code-annotations
     "content.code.annotate",
-
-    # This feature turns on a button in code blocks that allow users to
-    # copy the content to their clipboard without first selecting it.
-    # https://zensical.org/docs/authoring/code-blocks/#code-copy-button
     "content.code.copy",
 
-    # Code blocks can include a button to allow for the selection of line
-    # ranges by the user.
-    # https://zensical.org/docs/authoring/code-blocks/#code-selection-button
-    #    "content.code.select",
-
-    # Zensical can render footnotes as inline tooltips, so the user can read
-    # the footnote without leaving the context of the document.
-    # https://zensical.org/docs/authoring/footnotes/#footnote-tooltips
+    "content.tooltips",
     "content.footnote.tooltips",
 
-    # If you have many content tabs that have the same titles (e.g., "Python",
-    # "JavaScript", "Cobol"), this feature causes all of them to switch to
-    # at the same time when the user chooses their language in one.
-    # https://zensical.org/docs/authoring/content-tabs/#linked-content-tabs
     "content.tabs.link",
 
-    # With this feature enabled users can add tooltips to links that will be
-    # displayed when the mouse pointer hovers the link.
-    # https://zensical.org/docs/authoring/tooltips/#improved-tooltips
-    "content.tooltips",
-
-    # With this feature enabled, Zensical will automatically hide parts
-    # of the header when the user scrolls past a certain point.
-    # https://zensical.org/docs/setup/header/#automatic-hiding
-    #     "header.autohide",
-
-# ===  Navigation ===
+#    === Navigation ===
     "navigation.tabs",
     "navigation.tabs.sticky",
     "navigation.sections",
@@ -163,10 +126,12 @@ features = [
     "navigation.top",   # A back-to-top button can be shown when the user, after scrolling down, starts to scroll up again.
     "navigation.tracking",  # Update URL to the current anchor
 
+
     "search.highlight",
 
     "toc.follow",
 ]
+
 
 font.text = "Inter"
 font.code = "Jetbrains Mono"
