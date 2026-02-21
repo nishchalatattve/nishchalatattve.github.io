@@ -6,7 +6,7 @@ site_description = "Various tecnical documentations, including C++, markdown and
 site_author = "Haoze Pang"
 
 repo_url = "https://github.com/nishchalatattve/nishchalatattve.github.io"
-edit_uri = "raw/main/docs/"
+edit_uri = "edit/main/docs/"
 repo_name = "documentations"
 
 
