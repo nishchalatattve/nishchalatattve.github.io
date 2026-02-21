@@ -82,7 +82,7 @@ site_dir = "site"   # This is the default option, included here for clarity.
 use_directory_urls = true   # This is the default option, included here for clarity.
 
 copyright = """
-Unless otherwise stated, the articles on this website are written by Haoze Pang. Copyright &copy; 2026 Haoze Pang.
+Copyright &copy; 2026 The authors.
 """
 
 extra_javascript = [
