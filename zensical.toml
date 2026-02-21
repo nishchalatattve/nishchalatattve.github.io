@@ -97,9 +97,6 @@ custom_dir = "overrides"
 favicon = "images/lightbulb.png"
 language = "en" # Read more at https://zensical.org/docs/setup/language/
 features = [
-    # Zensical includes an announcement bar. This feature allows users to
-    # dismiss it when they have read the announcement.
-    # https://zensical.org/docs/setup/header/#announcement-bar
     "announce.dismiss",
 
     # If you have a repository configured and turn on this feature, Zensical
