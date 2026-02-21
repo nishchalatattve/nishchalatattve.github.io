@@ -5,6 +5,10 @@ site_url = "https://blog.nishchalatattve.com"
 site_description = "Various tecnical documentations, including C++, markdown and Python."
 site_author = "Haoze Pang"
 
+repo_url = "https://github.com/nishchalatattve/nishchalatattve.github.io"
+repo_name = "documentations"
+
+
 docs_dir = "docs"   # This is the default option, included here for clarity.
 site_dir = "site"   # This is the default option, included here for clarity.
 use_directory_urls = true   # This is the default option, included here for clarity.
@@ -154,33 +158,15 @@ scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
 
-# ----------------------------------------------------------------------------
-# You can configure your own logo to be shown in the header using the "logo"
-# option in the "icons" subsection. The logo can be a path to a file in your
-# "docs_dir" or it can be a path to an icon.
-#
-# Likewise, you can customize the logo used for the repository section of the
-# header. Zensical derives the default logo for this from the repository URL.
-# See below...
-#
-# There are other icons you can customize. See the documentation for details.
-#
-# Read more:
-# - https://zensical.org/docs/setup/logo-and-icons
-# - https://zensical.org/docs/authoring/icons-emojis/#search
-# ----------------------------------------------------------------------------
-#[project.theme.icon]
+[project.theme.icon]
 #logo = "lucide/smile"
-#repo = "lucide/smile"
+repo = "fontawesome/brands/git-alt"
 
-# ----------------------------------------------------------------------------
-# The "extra" section contains miscellaneous settings.
-# ----------------------------------------------------------------------------
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
 link = "https://github.com/nishchalatattve"
 
-
+# === Markdown extensions ===
 [project.markdown_extensions.abbr]
 [project.markdown_extensions.admonition]
 [project.markdown_extensions.attr_list]
