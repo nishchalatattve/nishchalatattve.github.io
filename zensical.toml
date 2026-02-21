@@ -161,7 +161,7 @@ toggle.name = "Switch to light mode"
 
 [project.theme.icon]
 #logo = "lucide/smile"
-repo = "fontawesome/brands/git-alt"
+repo = "fontawesome/brands/github"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
