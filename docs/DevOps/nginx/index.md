@@ -1,10 +1,15 @@
-# Nginx guide
+---
+icon: simple/nginx
+---
+# [nginx](https://nginx.org/) guide
 
 ## Installation
 ```terminaloutput
 $ sudo apt install nginx -y
 ```
-
+``` title="mac installation"
+--8<-- "docs/DevOps/Nginx/main.sh"
+```
 ## Process management
 ```terminaloutput
 $ sudo systemctl status nginx
@@ -30,7 +35,7 @@ $ sudo systemctl enable nginx
 ```
 
 ## Configuration
-Nginx sites are located in `/etc/nginx/sites-available/`.
+Nginx sites are located in `/etc/nginx/sites-available/`[^1].
 For example `/etc/nginx/sites-available/example.com` could contain the following
 ```text
 server {
@@ -56,4 +61,7 @@ After modifying the configuration, you may test its validity by typing
 ```terminaloutput
 $ sudo nginx -t
 ```
+
+[^1]:
+    On MacOS, the corresponding settings can be found in (`/opt/homebrew/etc/nginx/nginx.conf`).
 

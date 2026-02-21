@@ -10,19 +10,67 @@ site_dir = "site"   # This is the default option, included here for clarity.
 use_directory_urls = true   # This is the default option, included here for clarity.
 
 copyright = """
-Copyright &copy; 2026 Haoze Pang. This website also contains pages authored by the Zensical team.
+Unless otherwise stated, the articles on this website are written by Haoze Pang. Copyright &copy; 2026 Haoze Pang.
 """
 
-#nav = [
-##    {"Home" = "index.md"},
-#    {"C++" = [
-#        "languages/C++/index.md",
-#        {"Hello world in C++" = "languages/C++/hello.md" },
-#        {"Set up a environment for C++" = "languages/C++/environments.md" },
-#    ]},
-#    {"Markdown" = "languages/markdown.md"},
-#    {"GitHub Repo" = "https://github.com/zensical/docs"}
-#]
+nav = [
+    "index.md",
+    {"Level 0: Languages" = [
+        "languages/index.md",
+        {"Markdown" = [
+            "languages/Markdown/index.md"
+        ]},
+        {"C++" = [
+            "languages/C++/index.md",
+            "languages/C++/environments.md",
+        ]},
+        {"Python" = [
+            "languages/Python/index.md"
+        ]},
+    ]},
+    {"Level 1: Frameworks" = [
+        {"Toolbox" = []},   # e. g. a pdf extractor. Everything that is not in other folders.
+        {"LLM" = []},
+        {"Scientific computing" = []},
+        {"Web" = []},
+    ]} ,
+    {"DevOps " = [
+        "DevOps/index.md",
+        {"Git" = [
+            "DevOps/Git/index.md",
+        ]}, # Git
+        {"GitLab" = [
+            "DevOps/GitLab/index.md"
+        ]},
+        {"Cloud" = [
+            "DevOps/cloud/index.md",
+            {"Azure" = [
+                "DevOps/cloud/Azure/index.md",
+            ]},
+            {"GCP" = [
+                "DevOps/cloud/GCP/index.md"
+            ]},
+        ]},
+        {"nginx" = [
+            "DevOps/nginx/index.md",
+            "DevOps/nginx/TLS configuration.md"
+        ]},
+        {"Linux" = [
+            "DevOps/Linux/index.md",
+        ]},
+        {"SSH" = [
+            "DevOps/SSH/index.md",
+        ]},
+        "DevOps/NordVPN/index.md",
+        "DevOps/Terraform/index.md",
+    ]},
+    {"My thoughts" = []},
+    {"Zensical Demo" = [
+        "zensical_demo/index.md",
+        "zensical_demo/footnotes.md",
+        "zensical_demo/tab_groups.md",
+    ]}
+]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
@@ -118,7 +166,7 @@ features = [
     # Code blocks can include a button to allow for the selection of line
     # ranges by the user.
     # https://zensical.org/docs/authoring/code-blocks/#code-selection-button
-#    "content.code.select",
+    #    "content.code.select",
 
     # Zensical can render footnotes as inline tooltips, so the user can read
     # the footnote without leaving the context of the document.
@@ -139,12 +187,12 @@ features = [
     # With this feature enabled, Zensical will automatically hide parts
     # of the header when the user scrolls past a certain point.
     # https://zensical.org/docs/setup/header/#automatic-hiding
-#     "header.autohide",
+    #     "header.autohide",
 
     # Turn on this feature to expand all collapsible sections in the
     # navigation sidebar by default.
     # https://zensical.org/docs/setup/navigation/#navigation-expansion
-     "navigation.expand",
+    "navigation.expand",
 
     # This feature turns on navigation elements in the footer that allow the
     # user to navigate to a next or previous page.
@@ -170,7 +218,7 @@ features = [
     # In order to provide a better user experience on slow connections when
     # using instant navigation, a progress indicator can be enabled.
     # https://zensical.org/docs/setup/navigation/#progress-indicator
-#    "navigation.instant.progress",
+    #    "navigation.instant.progress",
 
     # When navigation paths are activated, a breadcrumb navigation is rendered
     # above the title of each page
@@ -180,12 +228,12 @@ features = [
     # When pruning is enabled, only the visible navigation items are included
     # in the rendered HTML, reducing the size of the built site by 33% or more.
     # https://zensical.org/docs/setup/navigation/#navigation-pruning
-    "navigation.prune",
+    #    "navigation.prune",
 
     # When sections are enabled, top-level sections are rendered as groups in
     # the sidebar for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-sections
-    "navigation.sections",
+    #    "navigation.sections",
 
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
@@ -216,7 +264,7 @@ features = [
     # When anchor following for the table of contents is enabled, the sidebar
     # is automatically scrolled so that the active anchor is always visible.
     # https://zensical.org/docs/setup/navigation/#anchor-following
-     "toc.follow",
+    "toc.follow",
 
     # When navigation integration for the table of contents is enabled, it is
     # always rendered as part of the navigation sidebar on the left.
@@ -275,40 +323,46 @@ code = "Jetbrains Mono"
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
+#extra_javascript = [
+#    "javascripts/mathjax.js",
+#    "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"
+#]
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
 link = "https://github.com/nishchalatattve"
 
-[project.markdown_extensions.abbr]
-[project.markdown_extensions.admonition]
-[project.markdown_extensions.attr_list]
-[project.markdown_extensions.def_list]
-[project.markdown_extensions.footnotes]
-[project.markdown_extensions.md_in_html]
-[project.markdown_extensions.toc]
-permalink = true
-[project.markdown_extensions.pymdownx.arithmatex]
-generic = true
-[project.markdown_extensions.pymdownx.betterem]
-smart_enable = "all"
-[project.markdown_extensions.pymdownx.caret]
-[project.markdown_extensions.pymdownx.details]
-[project.markdown_extensions.pymdownx.emoji]
-emoji_generator = "zensical.extensions.emoji.to_svg"
-emoji_index = "zensical.extensions.emoji.twemoji"
-[project.markdown_extensions.pymdownx.highlight]
-[project.markdown_extensions.pymdownx.inlinehilite]
-[project.markdown_extensions.pymdownx.keys]
-[project.markdown_extensions.pymdownx.mark]
-[project.markdown_extensions.pymdownx.smartsymbols]
-[project.markdown_extensions.pymdownx.superfences]
-[project.markdown_extensions.pymdownx.tabbed]
-alternate_style = true
-[project.markdown_extensions.pymdownx.tabbed.slugify]
-object = "pymdownx.slugs.slugify"
-kwds = { case = "lower" }
-[project.markdown_extensions.pymdownx.tasklist]
-custom_checkbox = true
-[project.markdown_extensions.pymdownx.tilde]
+
+#[project.markdown_extensions.abbr]
+#[project.markdown_extensions.admonition]
+#[project.markdown_extensions.attr_list]
+#[project.markdown_extensions.def_list]
+#[project.markdown_extensions.footnotes]
+#[project.markdown_extensions.md_in_html]
+#[project.markdown_extensions.toc]
+#permalink = true
+#[project.markdown_extensions.pymdownx.arithmatex]
+#generic = true
+#[project.markdown_extensions.pymdownx.betterem]
+#smart_enable = "all"
+#[project.markdown_extensions.pymdownx.caret]
+#[project.markdown_extensions.pymdownx.details]
+#[project.markdown_extensions.pymdownx.emoji]
+#emoji_generator = "zensical.extensions.emoji.to_svg"
+#emoji_index = "zensical.extensions.emoji.twemoji"
+#[project.markdown_extensions.pymdownx.highlight]
+#[project.markdown_extensions.pymdownx.inlinehilite]
+#[project.markdown_extensions.pymdownx.keys]
+#[project.markdown_extensions.pymdownx.mark]
+#[project.markdown_extensions.pymdownx.smartsymbols]
+#[project.markdown_extensions.pymdownx.snippets]
+#[project.markdown_extensions.pymdownx.superfences]
+#[project.markdown_extensions.pymdownx.tabbed]
+#alternate_style = true
+#[project.markdown_extensions.pymdownx.tabbed.slugify]
+#object = "pymdownx.slugs.slugify"
+#kwds = { case = "lower" }
+#[project.markdown_extensions.pymdownx.tasklist]
+#custom_checkbox = true
+#[project.markdown_extensions.pymdownx.tilde]
 
 

@@ -1,7 +1,4 @@
----
-icon: simple/cplusplus
----
-# Hello world in C++ !!
+# Tab groups
 === "C"
 
     ```c
@@ -23,4 +20,13 @@ icon: simple/cplusplus
       return 0;
     }
     ```
+=== "JavaScript"
 
+    ```js 
+    const greeting = "Hello, World!"; // [!code ++]
+    function sayHello() {
+      console.log("Hello, World!"); // [!code --]
+      console.log(greeting); // [!code ++]
+    }
+    sayHello();
+    ```

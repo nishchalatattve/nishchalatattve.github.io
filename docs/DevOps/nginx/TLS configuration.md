@@ -1,3 +1,6 @@
+---
+title: TLS configuration
+---
 # Configure TLS certificates with Let's Encrypt (certbot) with Nginx
 ## Prerequisites
 - Have example.com point towards the server IP (A name record)
