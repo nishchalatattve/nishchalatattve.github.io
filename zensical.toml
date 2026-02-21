@@ -9,6 +9,9 @@ nav = [
         {"C++" = [
             "languages/C++/index.md",
             "languages/C++/environments.md",
+            {"Testing" = [
+                "languages/C++/testing/index.md"
+            ]},
         ]},
         {"Python" = [
             "languages/Python/index.md"
