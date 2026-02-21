@@ -41,6 +41,7 @@ Follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 - `ci` Commits that affect operational aspects like infrastructure (IaC), deployment scripts, CI/CD pipelines, backups, monitoring, or recovery procedures, ...
 - `chore` Commits that represent tasks like initial commit, modifying `.gitignore`, ...
 
+The commit description starts with lowercase and does not end with punctuation (it is not a full sentence), as recommended by the Conventional Commits specification.
 ## References
 - [Pro Git](https://git-scm.com/book/en/v2)
 - [Oh Shit, Git!?!](https://ohshitgit.com/)
