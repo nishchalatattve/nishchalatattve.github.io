@@ -1,23 +1,4 @@
 [project]
-
-site_name = "Technical Documentation"
-site_url = "https://blog.nishchalatattve.com"
-site_description = "Various tecnical documentations, including C++, markdown and Python."
-site_author = "Haoze Pang"
-
-repo_url = "https://github.com/nishchalatattve/nishchalatattve.github.io"
-edit_uri = "edit/main/docs/"
-repo_name = "nishchalatattve.github.io"
-
-
-docs_dir = "docs"   # This is the default option, included here for clarity.
-site_dir = "site"   # This is the default option, included here for clarity.
-use_directory_urls = true   # This is the default option, included here for clarity.
-
-copyright = """
-Unless otherwise stated, the articles on this website are written by Haoze Pang. Copyright &copy; 2026 Haoze Pang.
-"""
-
 nav = [
     "index.md",
     {"Languages" = [
@@ -34,7 +15,7 @@ nav = [
         ]},
     ]},
     {"Frameworks" = [
-        {"Toolbox" = []},   # e. g. a pdf extractor. Everything that is not in other folders.
+        {"Toolbox" = []},   # e.g. a PDF extractor. Everything that is not in other folders.
         {"LLM" = []},
         {"Scientific computing" = []},
         {"Web" = []},
@@ -83,6 +64,24 @@ nav = [
         "zensical_demo/tab_groups.md",
     ]}
 ]
+
+site_name = "Technical Documentation"
+site_url = "https://blog.nishchalatattve.com"
+site_description = "Various tecnical documentations, including C++, markdown and Python."
+site_author = "Haoze Pang"
+
+repo_url = "https://github.com/nishchalatattve/nishchalatattve.github.io"
+edit_uri = "edit/main/docs/"
+repo_name = "nishchalatattve.github.io"
+
+docs_dir = "docs"   # This is the default option, included here for clarity.
+site_dir = "site"   # This is the default option, included here for clarity.
+use_directory_urls = true   # This is the default option, included here for clarity.
+
+copyright = """
+Unless otherwise stated, the articles on this website are written by Haoze Pang. Copyright &copy; 2026 Haoze Pang.
+"""
+
 extra_javascript = [
     "javascripts/mathjax.js",
     "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"
@@ -90,14 +89,6 @@ extra_javascript = [
 
 # === Theme ===
 [project.theme]
-# Zensical allows you to override specific blocks, partials, or whole
-# templates as well as to define your own templates. To do this, uncomment
-# the custom_dir setting below and set it to a directory in which you
-# keep your template overrides.
-#
-# Read more:
-# - https://zensical.org/docs/customization/#extending-the-theme
-#
 custom_dir = "overrides"
 favicon = "images/lightbulb.png"
 language = "en" # Read more at https://zensical.org/docs/setup/language/
@@ -140,15 +131,7 @@ features = [
 
 font.text = "Inter"
 font.code = "Jetbrains Mono"
-# ----------------------------------------------------------------------------
-# In the "palette" subsection you can configure options for the color scheme.
-# You can configure different color # schemes, e.g., to turn on dark mode,
-# that the user can switch between. Each color scheme can be further
-# customized.
-#
-# Read more:
-# - https://zensical.org/docs/setup/colors/
-# ----------------------------------------------------------------------------
+
 [[project.theme.palette]]
 scheme = "default"
 toggle.icon = "lucide/sun"
