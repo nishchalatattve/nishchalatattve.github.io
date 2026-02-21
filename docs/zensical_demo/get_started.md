@@ -175,3 +175,5 @@ Hover it, to see a tooltip.
 [Hover me][example]
 
   [example]: https://example.com "I'm a tooltip!"
+
+[Hi]("I am also a tooltip!")
