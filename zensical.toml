@@ -7,7 +7,7 @@ site_author = "Haoze Pang"
 
 repo_url = "https://github.com/nishchalatattve/nishchalatattve.github.io"
 edit_uri = "edit/main/docs/"
-repo_name = "documentations"
+repo_name = "nishchalatattve.github.io"
 
 
 docs_dir = "docs"   # This is the default option, included here for clarity.
