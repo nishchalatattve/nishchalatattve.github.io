@@ -14,7 +14,7 @@ Unless otherwise stated, the articles on this website are written by Haoze Pang.
 """
 
 nav = [
-    "get_started.md",
+    "index.md",
     {"Languages" = [
         "languages/get_started.md",
         {"Markdown" = [
