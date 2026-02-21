@@ -15,7 +15,7 @@ Unless otherwise stated, the articles on this website are written by Haoze Pang.
 
 nav = [
     "index.md",
-    {"Level 0: Languages" = [
+    {"Languages" = [
         "languages/index.md",
         {"Markdown" = [
             "languages/Markdown/index.md"
@@ -28,7 +28,7 @@ nav = [
             "languages/Python/index.md"
         ]},
     ]},
-    {"Level 1: Frameworks" = [
+    {"Frameworks" = [
         {"Toolbox" = []},   # e. g. a pdf extractor. Everything that is not in other folders.
         {"LLM" = []},
         {"Scientific computing" = []},
@@ -68,7 +68,7 @@ nav = [
         {"SSH" = [
             "DevOps/SSH/index.md",
         ]},
-        "DevOps/Terraform/index.md",
+#        "DevOps/Terraform/index.md",
     ]},
     {"My thoughts" = []},
     {"Zensical Demo" = [
