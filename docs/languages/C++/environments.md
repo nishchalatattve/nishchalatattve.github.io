@@ -39,4 +39,3 @@ Setting up cmake APT repository from kitware: https://apt.kitware.com/
 ```bash
 sudo apt-get install cmake
 ```
-
