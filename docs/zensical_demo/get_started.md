@@ -118,9 +118,9 @@ Hover it, to see a tooltip.
 
 > Go to [documentation](https://zensical.org/docs/authoring/math/)
 
-$$
+\[
 \cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
-$$
+\]
 
 !!! warning "Needs configuration"
     Note that MathJax is included via a `script` tag on this page and is not
@@ -129,21 +129,35 @@ $$
     to configure it on all your pages if they are more Maths-heavy than these
     simple starter pages.
 
-<script id="MathJax-script" async src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [["\\(", "\\)"]],
-      displayMath: [["\\[", "\\]"]],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      ignoreHtmlClass: ".*|",
-      processHtmlClass: "arithmatex"
-    }
-  };
-</script>
+[//]: # (<script id="MathJax-script" async src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>)
+
+[//]: # (<script>)
+
+[//]: # (  window.MathJax = {)
+
+[//]: # (    tex: {)
+
+[//]: # (      inlineMath: [["\\&#40;", "\\&#41;"]],)
+
+[//]: # (      displayMath: [["\\[", "\\]"]],)
+
+[//]: # (      processEscapes: true,)
+
+[//]: # (      processEnvironments: true)
+
+[//]: # (    },)
+
+[//]: # (    options: {)
+
+[//]: # (      ignoreHtmlClass: ".*|",)
+
+[//]: # (      processHtmlClass: "arithmatex")
+
+[//]: # (    })
+
+[//]: # (  };)
+
+[//]: # (</script>)
 
 ## Task Lists
 
