@@ -51,9 +51,16 @@ nav = [
                 "DevOps/cloud/GCP/index.md"
             ]},
         ]},
-        {"nginx" = [
-            "DevOps/nginx/index.md",
-            "DevOps/nginx/TLS configuration.md"
+        {"Networking" = [
+            "DevOps/networking/index.md",
+            {"nginx" = [
+                "DevOps/networking/nginx/index.md",
+                "DevOps/networking/nginx/TLS configuration.md"
+            ]},
+            {"Tailscale" = []},
+            {"NordVPN" = [
+                "DevOps/networking/NordVPN/index.md",
+            ]}
         ]},
         {"Linux" = [
             "DevOps/Linux/index.md",
@@ -61,7 +68,6 @@ nav = [
         {"SSH" = [
             "DevOps/SSH/index.md",
         ]},
-        "DevOps/NordVPN/index.md",
         "DevOps/Terraform/index.md",
     ]},
     {"My thoughts" = []},

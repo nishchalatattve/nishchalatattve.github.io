@@ -1,5 +1,6 @@
 ---
 title: Networking - misc
+icon: lucide/network
 ---
 # Networking
 - [Tailscale Installation](https://tailscale.com/download/linux)
