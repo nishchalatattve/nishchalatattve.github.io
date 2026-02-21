@@ -35,44 +35,44 @@ nav = [
         {"Web" = []},
     ]} ,
     {"DevOps " = [
-        "DevOps/get_started.md",
+        "DevOps/index.md",
         {"Git" = [
-            "DevOps/Git/get_started.md",
+            "DevOps/Git/index.md",
         ]}, # Git
         {"GitLab" = [
-            "DevOps/GitLab/get_started.md"
+            "DevOps/GitLab/index.md"
         ]},
         {"Cloud" = [
-            "DevOps/cloud/get_started.md",
+            "DevOps/cloud/index.md",
             {"Azure" = [
-                "DevOps/cloud/Azure/get_started.md",
+                "DevOps/cloud/Azure/index.md",
             ]},
             {"GCP" = [
-                "DevOps/cloud/GCP/get_started.md"
+                "DevOps/cloud/GCP/index.md"
             ]},
         ]},
         {"Networking" = [
-            "DevOps/networking/get_started.md",
+            "DevOps/networking/index.md",
             {"nginx" = [
-                "DevOps/networking/nginx/get_started.md",
+                "DevOps/networking/nginx/index.md",
                 "DevOps/networking/nginx/TLS configuration.md"
             ]},
             {"Tailscale" = []},
             {"NordVPN" = [
-                "DevOps/networking/NordVPN/get_started.md",
+                "DevOps/networking/NordVPN/index.md",
             ]}
         ]},
         {"Linux" = [
-            "DevOps/Linux/get_started.md",
+            "DevOps/Linux/index.md",
         ]},
         {"SSH" = [
-            "DevOps/SSH/get_started.md",
+            "DevOps/SSH/index.md",
         ]},
 #        "DevOps/Terraform/get_started.md",
     ]},
     {"My thoughts" = []},
     {"Zensical Demo" = [
-        "zensical_demo/get_started.md",
+        "zensical_demo/index.md",
         "zensical_demo/footnotes.md",
         "zensical_demo/tab_groups.md",
     ]}
