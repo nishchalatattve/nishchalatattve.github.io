@@ -13,70 +13,70 @@ copyright = """
 Unless otherwise stated, the articles on this website are written by Haoze Pang. Copyright &copy; 2026 Haoze Pang.
 """
 
-nav = [
-    "index.md",
-    {"Languages" = [
-        "languages/index.md",
-        {"Markdown" = [
-            "languages/Markdown/index.md"
-        ]},
-        {"C++" = [
-            "languages/C++/index.md",
-            "languages/C++/environments.md",
-        ]},
-        {"Python" = [
-            "languages/Python/index.md"
-        ]},
-    ]},
-    {"Frameworks" = [
-        {"Toolbox" = []},   # e. g. a pdf extractor. Everything that is not in other folders.
-        {"LLM" = []},
-        {"Scientific computing" = []},
-        {"Web" = []},
-    ]} ,
-    {"DevOps " = [
-        "DevOps/index.md",
-        {"Git" = [
-            "DevOps/Git/index.md",
-        ]}, # Git
-        {"GitLab" = [
-            "DevOps/GitLab/index.md"
-        ]},
-        {"Cloud" = [
-            "DevOps/cloud/index.md",
-            {"Azure" = [
-                "DevOps/cloud/Azure/index.md",
-            ]},
-            {"GCP" = [
-                "DevOps/cloud/GCP/index.md"
-            ]},
-        ]},
-        {"Networking" = [
-            "DevOps/networking/index.md",
-            {"nginx" = [
-                "DevOps/networking/nginx/index.md",
-                "DevOps/networking/nginx/TLS configuration.md"
-            ]},
-            {"Tailscale" = []},
-            {"NordVPN" = [
-                "DevOps/networking/NordVPN/index.md",
-            ]}
-        ]},
-        {"Linux" = [
-            "DevOps/Linux/index.md",
-        ]},
-        {"SSH" = [
-            "DevOps/SSH/index.md",
-        ]},
-#        "DevOps/Terraform/index.md",
-    ]},
-    {"My thoughts" = []},
-    {"Zensical Demo" = [
-        "zensical_demo/index.md",
-        "zensical_demo/footnotes.md",
-        "zensical_demo/tab_groups.md",
-    ]}
-]
+#nav = [
+#    "get_started.md",
+#    {"Languages" = [
+#        "languages/get_started.md",
+#        {"Markdown" = [
+#            "languages/Markdown/get_started.md"
+#        ]},
+#        {"C++" = [
+#            "languages/C++/get_started.md",
+#            "languages/C++/environments.md",
+#        ]},
+#        {"Python" = [
+#            "languages/Python/get_started.md"
+#        ]},
+#    ]},
+#    {"Frameworks" = [
+#        {"Toolbox" = []},   # e. g. a pdf extractor. Everything that is not in other folders.
+#        {"LLM" = []},
+#        {"Scientific computing" = []},
+#        {"Web" = []},
+#    ]} ,
+#    {"DevOps " = [
+#        "DevOps/get_started.md",
+#        {"Git" = [
+#            "DevOps/Git/get_started.md",
+#        ]}, # Git
+#        {"GitLab" = [
+#            "DevOps/GitLab/get_started.md"
+#        ]},
+#        {"Cloud" = [
+#            "DevOps/cloud/get_started.md",
+#            {"Azure" = [
+#                "DevOps/cloud/Azure/get_started.md",
+#            ]},
+#            {"GCP" = [
+#                "DevOps/cloud/GCP/get_started.md"
+#            ]},
+#        ]},
+#        {"Networking" = [
+#            "DevOps/networking/get_started.md",
+#            {"nginx" = [
+#                "DevOps/networking/nginx/get_started.md",
+#                "DevOps/networking/nginx/TLS configuration.md"
+#            ]},
+#            {"Tailscale" = []},
+#            {"NordVPN" = [
+#                "DevOps/networking/NordVPN/get_started.md",
+#            ]}
+#        ]},
+#        {"Linux" = [
+#            "DevOps/Linux/get_started.md",
+#        ]},
+#        {"SSH" = [
+#            "DevOps/SSH/get_started.md",
+#        ]},
+##        "DevOps/Terraform/get_started.md",
+#    ]},
+#    {"My thoughts" = []},
+#    {"Zensical Demo" = [
+#        "zensical_demo/get_started.md",
+#        "zensical_demo/footnotes.md",
+#        "zensical_demo/tab_groups.md",
+#    ]}
+#]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of

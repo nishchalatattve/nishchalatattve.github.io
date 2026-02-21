@@ -1,8 +1,5 @@
----
-icon: lucide/archive
----
-
 # Get started
+Written by the Zensical team.
 
 For full documentation visit [zensical.org](https://zensical.org/docs/).
 
