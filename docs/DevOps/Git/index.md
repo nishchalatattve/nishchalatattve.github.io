@@ -2,6 +2,32 @@
 icon: simple/git
 ---
 # [Git](https://git-scm.com/)
+## Commits
+Follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+```text
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+`<type>` can be any of:
+```text
+[
+  'build',
+  'chore',
+  'ci',
+  'docs',
+  'feat',
+  'fix',
+  'perf',
+  'refactor',
+  'revert',
+  'style',
+  'test'
+];
+```
 
 ## References
 
