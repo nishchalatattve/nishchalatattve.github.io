@@ -73,6 +73,7 @@ nav = [
     {"My thoughts" = []},
     {"Zensical Demo" = [
         "zensical_demo/index.md",
+        "docs/zensical_demo/get_started.md",
         "zensical_demo/footnotes.md",
         "zensical_demo/tab_groups.md",
     ]}
