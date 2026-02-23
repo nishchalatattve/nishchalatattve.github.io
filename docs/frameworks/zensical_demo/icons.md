@@ -8,8 +8,8 @@ each):
 - :octicons-mark-github-16: – [Octicons]
 - :simple-simpleicons: – [Simple Icons]
 
-[Lucide]: https://lucide.dev/
-[Material Design]: https://pictogrammers.com/library/mdi/
-[FontAwesome]: https://fontawesome.com/search?m=free
-[Octicons]: https://octicons.github.com/
-[Simple Icons]: https://simpleicons.org/
+    [Lucide]: https://lucide.dev/
+    [Material Design]: https://pictogrammers.com/library/mdi/
+    [FontAwesome]: https://fontawesome.com/search?m=free
+    [Octicons]: https://octicons.github.com/
+    [Simple Icons]: https://simpleicons.org/
