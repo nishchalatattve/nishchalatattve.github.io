@@ -21,7 +21,7 @@ nav = [
     {"Frameworks" = [
         {"Zensical" = [
             "frameworks/Zensical/index.md",
-            "frameworks/Zensical/get_started.md",
+            "frameworks/Zensical/get-started.md",
             "frameworks/Zensical/footnotes.md",
             "frameworks/Zensical/tab_groups.md",
             "frameworks/Zensical/icons.md"
@@ -66,7 +66,7 @@ nav = [
         {"SSH" = [
             "DevOps/SSH/index.md",
         ]},
-#        "DevOps/Terraform/get_started.md",
+#        "DevOps/Terraform/get-started.md",
     ]},
     {"My thoughts" = []},
 
