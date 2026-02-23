@@ -1,5 +1,6 @@
 ---
 title: TLS configuration
+icon: simple/nginx
 ---
 # Configure TLS certificates with Let's Encrypt (certbot) with Nginx
 ## Prerequisites

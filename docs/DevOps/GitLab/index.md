@@ -1,6 +1,3 @@
----
-icon: simple/gitlab
----
 # GitLab
 
 ## References

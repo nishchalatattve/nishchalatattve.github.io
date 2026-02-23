@@ -1,6 +1,3 @@
----
-icon: simple/googlecloud
----
 # Google Cloud Platform (GCP)
 
 ## Compute Engine

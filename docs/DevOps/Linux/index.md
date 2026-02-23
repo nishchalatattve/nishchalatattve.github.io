@@ -1,32 +1,28 @@
----
-title: Linux
-icon: simple/linux
----
 # Linux
 ## [User management](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-20-04)
 To add a user
-```shell
+```bash
 sudo adduser <newuser>
 ```
 To add user to `sudo` group
-```shell
+```bash
 usermod -aG sudo <newuser>
 ```
 
 To delete a user
-```shell
+```bash
 sudo deluser --remove-home <newuser>
 ```
 ## Resource checking
 ### [Check disk space](https://opensource.com/article/18/7/how-check-free-disk-space-linux)
-```shell
+```bash
 df -h # (1)!
 ```
 
 1.  The `-h` flag displays the size in human-readable format.
 
 ### Check RAM usage
-```shell
+```bash
 free -h
 ```
 

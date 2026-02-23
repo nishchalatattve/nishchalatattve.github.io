@@ -1,6 +1,3 @@
----
-icon: simple/nginx
----
 # [nginx](https://nginx.org/) guide
 
 ## Installation

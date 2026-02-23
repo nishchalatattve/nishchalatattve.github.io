@@ -49,13 +49,16 @@ nav = [
                 "DevOps/cloud/GCP/index.md"
             ]},
         ]},
+        {"Terraform" = [
+            "DevOps/Terraform/index.md"
+        ]},
         {"Networking" = [
             "DevOps/networking/index.md",
             {"nginx" = [
                 "DevOps/networking/nginx/index.md",
                 "DevOps/networking/nginx/TLS configuration.md"
             ]},
-            {"Tailscale" = []},
+#            {"Tailscale" = []},
             {"NordVPN" = [
                 "DevOps/networking/NordVPN/index.md",
             ]}
@@ -66,16 +69,13 @@ nav = [
         {"SSH" = [
             "DevOps/SSH/index.md",
         ]},
-#        "DevOps/Terraform/get-started.md",
     ]},
-    {"My thoughts" = []},
-
 ]
 
-site_name = "Notes & blogs"
+site_name = "Notes"
 site_url = "https://blog.nishchalatattve.com"
-site_description = "My notes and blogs pages."
-site_author = "Haoze Pang"
+site_description = "My notes."
+site_author = "Haoze Pang and contributors"
 
 repo_url = "https://github.com/nishchalatattve/nishchalatattve.github.io"
 edit_uri = "edit/main/docs/"

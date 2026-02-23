@@ -1,4 +1,1 @@
----
-icon: simple/python
----
 # Python

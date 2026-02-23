@@ -1,6 +1,3 @@
----
-icon: simple/git
----
 # [Git](https://git-scm.com/)
 
 ## References

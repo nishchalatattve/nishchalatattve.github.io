@@ -1,6 +1,3 @@
----
-icon: simple/markdown
----
 # Markdown 
 > Originally Written by the Zensical Team.
 > Adopted by the author.

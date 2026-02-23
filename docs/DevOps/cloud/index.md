@@ -1,4 +1,1 @@
----
-icon: lucide/cloud
----
-# Cloud Computing
+# Cloud computing
