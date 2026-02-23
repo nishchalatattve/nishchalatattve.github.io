@@ -4,7 +4,7 @@ icon: simple/git
 # Commit message standards
 Follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 ```text
-<type>[optional scope]: <description> (#<issue number>)
+<type>[optional scope]: <description> (#[optional issue number])
 
 [optional body]
 
