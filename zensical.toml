@@ -72,7 +72,7 @@ nav = [
 
 ]
 
-site_name = "Notes & Blogs"
+site_name = "Notes & blogs"
 site_url = "https://blog.nishchalatattve.com"
 site_description = "My notes and blogs pages."
 site_author = "Haoze Pang"
@@ -154,8 +154,8 @@ toggle.name = "Switch to light mode"
 repo = "fontawesome/brands/github"
 
 [[project.extra.social]]
-icon = "lucide/message-square"
-link = "https://github.com/nishchalatattve/nishchalatattve.github.io/discussions/7"
+icon = "fontawesome/solid/anchor-circle-exclamation"
+link = "https://github.com/nishchalatattve/nishchalatattve.github.io/issues"
 
 # === Markdown extensions ===
 [project.markdown_extensions.abbr]
