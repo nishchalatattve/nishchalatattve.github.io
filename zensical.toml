@@ -27,6 +27,7 @@ nav = [
         "DevOps/index.md",
         {"Git" = [
             "DevOps/Git/index.md",
+            "DevOps/Git/commit-message.md",
         ]}, # Git
         {"GitLab" = [
             "DevOps/GitLab/index.md"
