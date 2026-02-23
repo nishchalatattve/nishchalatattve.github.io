@@ -8,4 +8,5 @@ For Markdown files, we follow the style in [Zensical docs].
   
 - The name of the file should be in kebab-case.
 - Avoid inline links. Instead, annotate the link below.
+- Use `bash` to refer to commands and omit the `$` sign.
 
