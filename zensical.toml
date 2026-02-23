@@ -20,11 +20,11 @@ nav = [
     ]},
     {"Frameworks" = [
         {"Zensical" = [
-            "frameworks/zensical_demo/index.md",
-            "frameworks/zensical_demo/get_started.md",
-            "frameworks/zensical_demo/footnotes.md",
-            "frameworks/zensical_demo/tab_groups.md",
-            "frameworks/zensical_demo/icons.md"
+            "frameworks/Zensical/index.md",
+            "frameworks/Zensical/get_started.md",
+            "frameworks/Zensical/footnotes.md",
+            "frameworks/Zensical/tab_groups.md",
+            "frameworks/Zensical/icons.md"
         ]},
 #        {"Toolbox" = []},   # e.g. a PDF extractor. Everything that is not in other folders.
 #        {"LLM" = []},
