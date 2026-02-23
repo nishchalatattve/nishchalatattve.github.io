@@ -1,6 +1,6 @@
 # Zensical
 
-[Zensical] is an amazing static site generator.
+[Zensical] is a static site generator.
 It generates static HTTML files from Markdown files.
 
   [Zensical]: https://zensical.org/
