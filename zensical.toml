@@ -18,10 +18,17 @@ nav = [
         ]},
     ]},
     {"Frameworks" = [
-        {"Toolbox" = []},   # e.g. a PDF extractor. Everything that is not in other folders.
-        {"LLM" = []},
-        {"Scientific computing" = []},
-        {"Web" = []},
+        {"Zensical" = [
+            "frameworks/zensical_demo/index.md",
+            "frameworks/zensical_demo/get_started.md",
+            "frameworks/zensical_demo/footnotes.md",
+            "frameworks/zensical_demo/tab_groups.md",
+            "frameworks/zensical_demo/icons.md"
+        ]},
+#        {"Toolbox" = []},   # e.g. a PDF extractor. Everything that is not in other folders.
+#        {"LLM" = []},
+#        {"Scientific computing" = []},
+#        {"Web" = []},
     ]} ,
     {"DevOps " = [
         "DevOps/index.md",
@@ -61,12 +68,7 @@ nav = [
 #        "DevOps/Terraform/get_started.md",
     ]},
     {"My thoughts" = []},
-    {"Zensical Demo" = [
-        "zensical_demo/index.md",
-        "zensical_demo/get_started.md",
-        "zensical_demo/footnotes.md",
-        "zensical_demo/tab_groups.md",
-    ]}
+
 ]
 
 site_name = "Technical Documentation"
