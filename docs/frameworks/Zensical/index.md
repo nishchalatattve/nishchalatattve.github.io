@@ -5,6 +5,11 @@ It generates static HTTML files from Markdown files.
 
   [Zensical]: https://zensical.org/
 
+## Installation
+```bash
+uv init
+uv add --dev zensical
+```
 
 ## Upgrade
 ```commandline
