@@ -1,5 +1,9 @@
 # Zensical Demo
 This folder contains various files for the Zensical Demo.
+## Upgrade
+```commandline
+uv lock --upgrade-package zensical==<version>
+```
 
 ## Reference
 1. [Installation](https://zensical.org/docs/get-started/)
