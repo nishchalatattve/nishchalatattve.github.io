@@ -1,10 +1,23 @@
 ---
 icon: simple/markdown
 ---
+# Markdown 
+> Originally Written by the Zensical Team.
+> Adopted by the author.
 
-# Markdown in 5min
-Originally Written by the Zensical Team.
-Adopted by the auhtor.
+[Markdown] was originally developed by John Gruber in 2004 as "a text-to-HTML conversion tool for web writers".
+The aim of Markdown is to allow users to write in an easy-to-read, easy-to-write plain text format, then convert it to structurally valid HTML.
+
+  [Markdown]: https://daringfireball.net/projects/markdown/
+
+There is no common standards for Markdown, but the following dialect are worth checking out:
+- [Zensical]
+- [CommonMark]
+- [GitHub]
+
+  [Zensical]: https://zensical.org/docs/authoring/markdown/
+  [CommonMark]: https://commonmark.org/
+  [GitHub]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github
 
 ## Headers
 ```
