@@ -73,7 +73,7 @@ nav = [
 ]
 
 site_name = "Notes"
-site_url = "https://blog.nishchalatattve.com"
+site_url = "https://nishchalatattve.github.io/"
 site_description = "My notes."
 site_author = "Haoze Pang and contributors"
 
