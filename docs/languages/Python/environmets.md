@@ -2,9 +2,14 @@
 icon: simple/python
 ---
 # Set up environments
-## [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions)
+## [Miniconda]
 
-## uv
+[Miniconda]: https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions
+
+## [uv]
+
+[uv]: https://docs.astral.sh/uv/
+
 ### Installation
 ```commandline
 curl -LsSf https://astral.sh/uv/install.sh | sh
