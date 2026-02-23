@@ -3,7 +3,8 @@ icon: simple/markdown
 ---
 
 # Markdown in 5min
-Written by the Zensical Team.
+Originally Written by the Zensical Team.
+Adopted by the auhtor.
 
 ## Headers
 ```

@@ -1,5 +1,6 @@
 # Get started
-Written by the Zensical team.
+Originally Written by the Zensical Team.
+Adopted by the auhtor.
 
 For full documentation visit [zensical.org](https://zensical.org/docs/).
 
