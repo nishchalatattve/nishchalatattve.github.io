@@ -14,7 +14,8 @@ nav = [
             ]},
         ]},
         {"Python" = [
-            "languages/Python/index.md"
+#            "languages/Python/index.md"
+            "languages/Python/environmets.md",
         ]},
     ]},
     {"Frameworks" = [
