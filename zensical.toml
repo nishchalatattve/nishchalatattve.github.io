@@ -72,9 +72,9 @@ nav = [
 
 ]
 
-site_name = "Technical Documentation"
+site_name = "Notes & Blogs"
 site_url = "https://blog.nishchalatattve.com"
-site_description = "Various tecnical documentations, including C++, markdown and Python."
+site_description = "My notes and blogs pages."
 site_author = "Haoze Pang"
 
 repo_url = "https://github.com/nishchalatattve/nishchalatattve.github.io"
