@@ -1,5 +1,5 @@
 ---
-title: Environment set up
+title: Set up environments
 icon: simple/cplusplus
 ---
 
