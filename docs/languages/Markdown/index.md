@@ -11,6 +11,7 @@ The aim of Markdown is to allow users to write in an easy-to-read, easy-to-write
   [Markdown]: https://daringfireball.net/projects/markdown/
 
 There is no common standards for Markdown, but the following dialect are worth checking out:
+
 - [Zensical]
 - [CommonMark]
 - [GitHub]
