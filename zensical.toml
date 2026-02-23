@@ -149,9 +149,9 @@ toggle.name = "Switch to light mode"
 #logo = "lucide/smile"
 repo = "fontawesome/brands/github"
 
-#[[project.extra.social]]
-#icon = "fontawesome/brands/github"
-#link = "https://github.com/nishchalatattve"
+[[project.extra.social]]
+icon = "lucide/message-square"
+link = "https://github.com/nishchalatattve/nishchalatattve.github.io/discussions/7"
 
 # === Markdown extensions ===
 [project.markdown_extensions.abbr]
