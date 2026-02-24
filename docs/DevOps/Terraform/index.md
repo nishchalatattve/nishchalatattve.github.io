@@ -5,7 +5,7 @@
 
 ## Update terraform provider versions
 
-Change the provider versions in the `main.tf` file then.
+Change the provider versions in the `main.tf` file then
 ```bash
 terraform init -upgrade
 ```
