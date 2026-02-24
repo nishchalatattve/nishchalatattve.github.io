@@ -26,6 +26,10 @@ df -h # (1)!
 free -h
 ```
 
+### Other utilities
+```bash
+tree -n --charset=ASCII -o tree.txt
+```
 ## References
 ### General 
 - [Linuxize](https://linuxize.com/) - Linux tutorials and guides
