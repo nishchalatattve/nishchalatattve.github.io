@@ -27,3 +27,12 @@ rm -r "$(uv tool dir)"
 ```commandline
 rm ~/.local/bin/uv ~/.local/bin/uvx
 ```
+
+### Add packages
+```bash
+uv add --dev <package> # (1)! 
+```
+
+1. The `--dev` flag means the added package will is for development only.
+It will not be part of the requirement should the project be published as a package.
+
