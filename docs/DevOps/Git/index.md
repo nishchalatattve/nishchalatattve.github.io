@@ -4,20 +4,13 @@
 ### Checking remotes
 To check the URL of remotes:
 ```bash
-git remote -v 
-```
-Example output:
-```terminaloutput
+$ git remote -v 
 origin  git@github.com:nishchalatattve/nishchalatattve.github.io.git (fetch)
 origin  git@github.com:nishchalatattve/nishchalatattve.github.io.git (push)
 ```
-
 To dig further into a specific remote:
 ```bash
-git remote show origin
-```
-Example output:
-```terminaloutput
+$ git remote show origin
 * remote origin
   Fetch URL: git@github.com:nishchalatattve/nishchalatattve.github.io.git
   Push  URL: git@github.com:nishchalatattve/nishchalatattve.github.io.git
@@ -58,18 +51,12 @@ git remote rename pb paul
 ## Commit username and email
 ### Get username
 ```bash
-git config --get user.name
-```
-Example output:
-```terminaloutput
+$ git config --get user.name
 nishchalatattve
 ```
 ### Get email 
 ```bash
-git config --get user.email
-```
-Example output:
-```terminaloutput
+$ git config --get user.email
 136802495+nishchalatattve@users.noreply.github.com
 ```
 ### Set username 
