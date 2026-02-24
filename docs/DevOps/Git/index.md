@@ -1,13 +1,15 @@
 # [Git](https://git-scm.com/)
 
 ## Remote
-To show all remotes:
+### Checking remotes
+To check the URL of remotes:
 ```bash
-git remote show 
+git remote -v 
 ```
 Example output:
 ```terminaloutput
-origin
+origin  git@github.com:nishchalatattve/nishchalatattve.github.io.git (fetch)
+origin  git@github.com:nishchalatattve/nishchalatattve.github.io.git (push)
 ```
 
 To dig further into a specific remote:
@@ -26,6 +28,31 @@ Example output:
     main merges with remote main
   Local ref configured for 'git push':
     main pushes to main (up to date)
+```
+### Managing Remotes
+#### Adding a remote
+```bash
+git remote add <remote_name> <remote_url>
+# For example,
+git remote add origin git@github.com:nishchalatattve/nishchalatattve.github.io.git
+```
+#### Removing a remote
+```bash
+git remote remove <remote_name>
+# For example,
+git remote remove paul
+```
+#### Changing remote URL
+```bash
+git remote set-url <remote_name> <new_remote_url>
+# For example,
+git remote set-url origin git@github.com:nishchalatattve/nishchalatattve.github.io.git
+```
+#### Changing remote shortname
+```bash
+git remote rename <original_name> <new_name>
+# For example,
+git remote rename pb paul
 ```
 
 ## Commit username and email
