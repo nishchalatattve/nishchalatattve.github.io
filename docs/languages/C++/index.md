@@ -1,5 +1,8 @@
 # Introduction to C++
 
-- [Const member functions]
+## Const member functions
+- See the GeekforGeeks article
+- See also the StackOverflow post
 
-  [Const member functions]: https://www.geeksforgeeks.org/cpp/const-member-functions-c/
+  [GeekforGeeks article]: https://www.geeksforgeeks.org/cpp/const-member-functions-c/
+  [StackOverflow post]: https://stackoverflow.com/questions/3141087/what-is-meant-with-const-at-end-of-function-declaration
