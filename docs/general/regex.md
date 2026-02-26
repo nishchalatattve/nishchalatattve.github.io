@@ -11,7 +11,7 @@
 ## Quantifiers
 - `*`: 0 or more times
 - `+`: 1 or more times
-- `?`: 0 or 1 times
+- `?`: 0 or 1 times.
 Essentially this is a [non-greedy] quantifier.
 - `{n}`: exactly n times
 - `{n,}`: at least n times
