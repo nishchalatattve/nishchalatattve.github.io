@@ -11,7 +11,8 @@ nav = [
             "languages/C++/environments.md",
             "languages/C++/style.md",
             {"Testing" = [
-                "languages/C++/testing/index.md"
+                "languages/C++/testing/index.md",
+                "languages/C++/testing/doubles.md"
             ]},
         ]},
         {"Python" = [
