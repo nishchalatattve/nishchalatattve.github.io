@@ -1,5 +1,6 @@
 [project]
 nav = [
+    "index.md",
     {"General" = [
         "general/index.md",
         "general/regex.md"
