@@ -1,6 +1,9 @@
 [project]
 nav = [
-    "index.md",
+    {"General" = [
+        "general/index.md",
+        "general/regex.md"
+    ]},
     {"Languages" = [
         "languages/index.md",
         {"Markdown" = [
