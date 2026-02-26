@@ -10,4 +10,4 @@
 ## References
 - [Const correctness from ISOC++] 
 
-  [Const correctness from ISOC++]:https://isocpp.org/wiki/faq/const-correctness
+  [Const correctness from ISOC++]: https://isocpp.org/wiki/faq/const-correctness
