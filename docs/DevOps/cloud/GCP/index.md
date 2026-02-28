@@ -1,4 +1,9 @@
 # Google Cloud Platform (GCP)
+## Compute Engine
+- [Confidential VM]
+
+  [Confidential VM]:https://cloud.google.com/compute/confidential-vm/docs
+
 ## Vertex AI
 - [About zero data retention]
 
@@ -24,7 +29,6 @@
 
 [//]: # (- [Confidential Computing]&#40;https://cloud.google.com/confidential-computing&#41;)
 
-[//]: # (- [Confidential VM Documentation]&#40;https://cloud.google.com/compute/confidential-vm/docs&#41;)
 
 [//]: # ()
 [//]: # (## Terraform references)
