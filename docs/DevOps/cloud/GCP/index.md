@@ -2,7 +2,7 @@
 ## Compute Engine
 - [Confidential VM]
 
-  [Confidential VM]:https://cloud.google.com/compute/confidential-vm/docs
+  [Confidential VM]:https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview
 
 ## Vertex AI
 - [About zero data retention]
