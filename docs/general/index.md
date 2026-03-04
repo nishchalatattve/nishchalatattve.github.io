@@ -12,8 +12,14 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
   [Key words for use in RFCs to Indicate Requirement Levels]: https://datatracker.ietf.org/doc/html/rfc2119
   
 ## [SemVer]
+- [Different versioning schemes] by Andrew Nesbitt
+- [A discussion on Hacker news]
+- [A discussion on StackOverflow]
 
   [SemVer]: https://semver.org/spec/v2.0.0.html
+  [Different versioning schemes]: https://nesbitt.io/2024/06/24/from-zerover-to-semver-a-comprehensive-list-of-versioning-schemes-in-open-source.html
+  [A discussion on Hacker news]: https://news.ycombinator.com/item?id=36641784
+  [A discussion on StackOverflow]: https://stackoverflow.com/questions/9463613/what-does-public-api-mean-in-semantic-versioning
   
 ## [MIME types]
 
