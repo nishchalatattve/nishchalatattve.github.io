@@ -9,13 +9,15 @@ The aim of Markdown is to allow users to write in an easy-to-read, easy-to-write
 
 There is not a common standard for Markdown, but the following dialects are worth checking out:
 
-- [Zensical]
+- [GitHub flavour]
+- [GitLab flavour]
 - [CommonMark]
-- [GitHub]
+- [Zensical]
 
-  [Zensical]: https://zensical.org/docs/authoring/markdown/
+  [GitHub flavour]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github
+  [GitLab flavour]: https://docs.gitlab.com/18.8/user/markdown/
   [CommonMark]: https://commonmark.org/
-  [GitHub]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github
+  [Zensical]: https://zensical.org/docs/authoring/markdown/
 
 ## Headers
 ```
