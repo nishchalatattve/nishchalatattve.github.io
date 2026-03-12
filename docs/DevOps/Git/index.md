@@ -1,13 +1,19 @@
 # [Git](https://git-scm.com/)
 ## Tips
 ### Completely separate commit history
-When you initialise an repository on remote (GitLab), and made sevearal commits to edit README, it is now messy to push your local, which has completely differety commit history, to remote.
-To solve this issue,
+When you initialise a repository on remote (GitLab), and made several commits to edit README, it is now messy to push your local, which has a completely different commit history, to remote.
+To solve this issue.
 ```bash
 git pull <remote name> <remote branch> --allow-unrelated-histories
 # For example,
 git pull personal main --allow-unrelated-histories
 ```
+## Submodule
+```bash
+git submodule add --depth 1 https://github.com/marzer/tomlplusplus.git tomlplusplus # (1)!
+```
+
+1.  > `--depth 1` only downloads the latest commit.
 ## Remote
 ### Checking remotes
 To check the URL of remotes:
