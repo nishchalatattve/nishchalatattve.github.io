@@ -2,7 +2,14 @@
 icon: lucide/rocket
 ---
 # General
-General bits about techology
+General bits about technology
+
+## `curl`
+```bash
+curl -fsSL <url> -o <output_filename>
+# For example
+curl -fsSL https://raw.githubusercontent.com/marzer/tomlplusplus/master/toml.hpp -o toml.h
+```
 
 ## [Key words for use in RFCs to Indicate Requirement Levels]
 ```text
