@@ -15,6 +15,9 @@ git submodule add --depth 1 https://github.com/marzer/tomlplusplus.git tomlplusp
 ```bash
 git submodule update --init --recursive
 ```
+```bash
+git clone --recurse-submodules <repo-url>
+```
 
 1.  > `--depth 1` only downloads the latest commit.
 ## Remote
