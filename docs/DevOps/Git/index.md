@@ -12,6 +12,9 @@ git pull personal main --allow-unrelated-histories
 ```bash
 git submodule add --depth 1 https://github.com/marzer/tomlplusplus.git tomlplusplus # (1)!
 ```
+```bash
+git submodule update --init --recursive
+```
 
 1.  > `--depth 1` only downloads the latest commit.
 ## Remote
