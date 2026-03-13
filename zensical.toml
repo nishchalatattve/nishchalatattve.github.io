@@ -6,7 +6,7 @@
 #        "general/regex.md",
 #        {"Git" = [
 #            "general/Git/index.md",
-#            "general/Git/commit-message.md",
+#            "general/Git/commit_message.md",
 #        ]},
 #    ]},
 #    {"Languages" = [
@@ -30,11 +30,11 @@
 #    ]},
 #    {"Frameworks" = [
 #        {"Zensical" = [
-#            "frameworks/Zensical/index.md",
-#            "frameworks/Zensical/get-started.md",
-#            "frameworks/Zensical/footnotes.md",
-#            "frameworks/Zensical/tab_groups.md",
-#            "frameworks/Zensical/icons.md"
+#            "toolchains/Zensical/index.md",
+#            "toolchains/Zensical/others.md",
+#            "toolchains/Zensical/footnotes.md",
+#            "toolchains/Zensical/content_tabs.md",
+#            "toolchains/Zensical/icons.md"
 #        ]},
 #    ]} ,
 #    {"DevOps " = [

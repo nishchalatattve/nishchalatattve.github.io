@@ -1,7 +1,7 @@
 ---
-icon: simple/python
+icon: lucide/container
 ---
-# Set up environments
+# Set up an environment for Python development
 ## [Miniconda]
 
   [Miniconda]: https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions

@@ -1,4 +1,4 @@
-# Tab groups
+# Content tabs
 === "C"
 
     ```c
