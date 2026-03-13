@@ -9,7 +9,7 @@
   [StackOverflow post]: https://stackoverflow.com/questions/3141087/what-is-meant-with-const-at-end-of-function-declaration
 
 ## References
-- [An excellent post] that answers some of the common question about C++.
+- [An excellent post] that answers some of the common questions about C++.
 - [Const correctness from ISOC++] 
 
   [Const correctness from ISOC++]: https://isocpp.org/wiki/faq/const-correctness
