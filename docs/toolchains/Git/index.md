@@ -27,12 +27,20 @@ project,
 ```shell
 git submodule init
 ```
-
-
 ### Update submodules
+To update the submodule to the latest commit on the tracked branch,
 ```shell
 git submodule update --remote
 ```
+To update the submodule to the latest commit tracked in the super repository
+```shell
+git submodule update --remote # (1)!
+# For example,
+git submodule update --remote --merge
+```
+
+1. This is usually performed after the upstream repository has been updated.
+
 ### Clone git repository with submodules
 ```shell
 git clone --recurse-submodules <repo-url>
@@ -40,26 +48,33 @@ git clone --recurse-submodules <repo-url>
 
 ## Remote
 ### Checking remotes
-To check the URL of remotes:
-```shell
-$ git remote -v 
-origin  git@github.com:nishchalatattve/nishchalatattve.github.io.git (fetch)
-origin  git@github.com:nishchalatattve/nishchalatattve.github.io.git (push)
+```shell  title="Check the URL of remotes"
+git remote -v 
 ```
-To dig further into a specific remote:
-```shell
-$ git remote show origin
-* remote origin
-  Fetch URL: git@github.com:nishchalatattve/nishchalatattve.github.io.git
-  Push  URL: git@github.com:nishchalatattve/nishchalatattve.github.io.git
-  HEAD branch: main
-  Remote branch:
-    main tracked
-  Local branch configured for 'git pull':
-    main merges with remote main
-  Local ref configured for 'git push':
-    main pushes to main (up to date)
+??? info "Output"
+
+    ```text
+    origin  git@github.com:nishchalatattve/nishchalatattve.github.io.git (fetch)
+    origin  git@github.com:nishchalatattve/nishchalatattve.github.io.git (push)
+    ```
+
+```shell title="Dig further into a specific remote"
+git remote show origin
 ```
+??? info "Output"
+
+    ```text
+    * remote origin
+      Fetch URL: git@github.com:nishchalatattve/nishchalatattve.github.io.git
+      Push  URL: git@github.com:nishchalatattve/nishchalatattve.github.io.git
+      HEAD branch: main
+      Remote branch:
+      main tracked
+      Local branch configured for 'git pull':
+      main merges with remote main
+      Local ref configured for 'git push':
+      main pushes to main (up to date)
+    ```
 ### Managing Remotes
 #### Adding a remote
 ```shell
@@ -87,40 +102,52 @@ git remote rename pb paul
 ```
 
 ## Commit username and email
-### Get username
-```shell
-$ git config --get user.name
-nishchalatattve
+### Get username and emails
+```shell title="Get username"
+git config --get user.name
 ```
-### Get email 
-```shell
-git config --get user.email \
-136802495+nishchalatattve@users.noreply.github.com
+??? info "Output"
+
+    ```text
+    nishchalatattve
+    ```
+```shell title="Get email"
+git config --get user.email 
 ```
-### Set username 
-=== "Set in `.git/config`"
-    ```bash
+
+??? info "Output"
+
+    ```text
+    136802495+nishchalatattve@users.noreply.github.com
+    ```
+### Set username and emails
+=== "Set locally (in `.git/config`)"
+    ```shell title="Set username"
     git config user.name "<username>"
     ```
 
-=== "Set in `~/.gitconfig`"
-    ```bash
-    git config --global user.name "<username>"
-    ```
-### Set email 
-=== "Set in `.git/config`"
-    ```bash
+    ```shell title="Set email"
     git config user.email "<email>"
     ```
 
-=== "Set in `~/.gitconfig`"
-    ```bash
+=== "Set globally (in `~/.gitconfig`)"
+    ```shell title="Set username"
+    git config --global user.name "<username>"
+    ```
+
+    ```shell title="Set email"
     git config --global user.email "<email>"
     ```
 
 ## References
-- [Pro Git](https://git-scm.com/book/en/v2)
-- [Oh Shit, Git!?!](https://ohshitgit.com/)
-- [Sign off commits](https://docs.gitlab.com/user/project/repository/signed_commits/ssh/)
-- [Git LFS](https://git-lfs.com/)
+- [Pro Git]
+- [Oh Shit, Git!?!]
+- [Sign off commits]
+- [Git LFS]
+
+  [Pro Git]: https://git-scm.com/book/en/v2
+  [Oh Shit, Git!?!]: https://ohshitgit.com/
+  [Sign off commits]:https://docs.gitlab.com/user/project/repository/signed_commits/ssh/
+  [Git LFS]: https://git-lfs.com/
+
 
