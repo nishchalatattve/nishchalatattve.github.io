@@ -3,7 +3,11 @@ nav = [
     "index.md",
     {"General" = [
         "general/index.md",
-        "general/regex.md"
+        "general/regex.md",
+        {"Git" = [
+            "general/Git/index.md",
+            "general/Git/commit-message.md",
+        ]},
     ]},
     {"Languages" = [
         "languages/index.md",
@@ -32,17 +36,9 @@ nav = [
             "frameworks/Zensical/tab_groups.md",
             "frameworks/Zensical/icons.md"
         ]},
-#        {"Toolbox" = []},   # e.g. a PDF extractor. Everything that is not in other folders.
-#        {"LLM" = []},
-#        {"Scientific computing" = []},
-#        {"Web" = []},
     ]} ,
     {"DevOps " = [
         "DevOps/index.md",
-        {"Git" = [
-            "DevOps/Git/index.md",
-            "DevOps/Git/commit-message.md",
-        ]}, # Git
         {"GitLab" = [
             "DevOps/GitLab/index.md"
         ]},
