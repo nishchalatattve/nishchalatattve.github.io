@@ -1,78 +1,78 @@
 [project]
-nav = [
-    "index.md",
-    {"General" = [
-        "general/index.md",
-        "general/regex.md",
-        {"Git" = [
-            "general/Git/index.md",
-            "general/Git/commit-message.md",
-        ]},
-    ]},
-    {"Languages" = [
-        "languages/index.md",
-        {"Markdown" = [
-            "languages/Markdown/index.md"
-        ]},
-        {"C++" = [
-            "languages/C++/index.md",
-            "languages/C++/environments.md",
-            "languages/C++/style.md",
-            {"Testing" = [
-                "languages/C++/testing/index.md",
-                "languages/C++/testing/doubles.md"
-            ]},
-        ]},
-        {"Python" = [
-#            "languages/Python/index.md"
-            "languages/Python/environmets.md",
-        ]},
-    ]},
-    {"Frameworks" = [
-        {"Zensical" = [
-            "frameworks/Zensical/index.md",
-            "frameworks/Zensical/get-started.md",
-            "frameworks/Zensical/footnotes.md",
-            "frameworks/Zensical/tab_groups.md",
-            "frameworks/Zensical/icons.md"
-        ]},
-    ]} ,
-    {"DevOps " = [
-        "DevOps/index.md",
-        {"GitLab" = [
-            "DevOps/GitLab/index.md"
-        ]},
-        {"Cloud" = [
-            "DevOps/cloud/index.md",
-            {"Azure" = [
-                "DevOps/cloud/Azure/index.md",
-            ]},
-            {"GCP" = [
-                "DevOps/cloud/GCP/index.md"
-            ]},
-        ]},
-        {"Terraform" = [
-            "DevOps/Terraform/index.md"
-        ]},
-        {"Networking" = [
-            "DevOps/networking/index.md",
-            {"nginx" = [
-                "DevOps/networking/nginx/index.md",
-                "DevOps/networking/nginx/TLS configuration.md"
-            ]},
-#            {"Tailscale" = []},
-            {"NordVPN" = [
-                "DevOps/networking/NordVPN/index.md",
-            ]}
-        ]},
-        {"Linux" = [
-            "DevOps/Linux/index.md",
-        ]},
-        {"SSH" = [
-            "DevOps/SSH/index.md",
-        ]},
-    ]},
-]
+#nav = [
+#    "index.md",
+#    {"General" = [
+#        "general/index.md",
+#        "general/regex.md",
+#        {"Git" = [
+#            "general/Git/index.md",
+#            "general/Git/commit-message.md",
+#        ]},
+#    ]},
+#    {"Languages" = [
+#        "languages/index.md",
+#        {"Markdown" = [
+#            "languages/Markdown/index.md"
+#        ]},
+#        {"C++" = [
+#            "languages/C++/index.md",
+#            "languages/C++/environments.md",
+#            "languages/C++/style.md",
+#            {"Testing" = [
+#                "languages/C++/testing/index.md",
+#                "languages/C++/testing/doubles.md"
+#            ]},
+#        ]},
+#        {"Python" = [
+##            "languages/Python/index.md"
+#            "languages/Python/environmets.md",
+#        ]},
+#    ]},
+#    {"Frameworks" = [
+#        {"Zensical" = [
+#            "frameworks/Zensical/index.md",
+#            "frameworks/Zensical/get-started.md",
+#            "frameworks/Zensical/footnotes.md",
+#            "frameworks/Zensical/tab_groups.md",
+#            "frameworks/Zensical/icons.md"
+#        ]},
+#    ]} ,
+#    {"DevOps " = [
+#        "DevOps/index.md",
+#        {"GitLab" = [
+#            "DevOps/GitLab/index.md"
+#        ]},
+#        {"Cloud" = [
+#            "DevOps/cloud/index.md",
+#            {"Azure" = [
+#                "DevOps/cloud/Azure/index.md",
+#            ]},
+#            {"GCP" = [
+#                "DevOps/cloud/GCP/index.md"
+#            ]},
+#        ]},
+#        {"Terraform" = [
+#            "DevOps/Terraform/index.md"
+#        ]},
+#        {"Networking" = [
+#            "DevOps/networking/index.md",
+#            {"nginx" = [
+#                "DevOps/networking/nginx/index.md",
+#                "DevOps/networking/nginx/TLS configuration.md"
+#            ]},
+##            {"Tailscale" = []},
+#            {"NordVPN" = [
+#                "DevOps/networking/NordVPN/index.md",
+#            ]}
+#        ]},
+#        {"Linux" = [
+#            "DevOps/Linux/index.md",
+#        ]},
+#        {"SSH" = [
+#            "DevOps/SSH/index.md",
+#        ]},
+#    ]},
+#]
 
 site_name = "Notes"
 site_url = "https://nishchalatattve.github.io/"
