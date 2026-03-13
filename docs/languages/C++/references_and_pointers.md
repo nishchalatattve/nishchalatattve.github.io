@@ -12,7 +12,7 @@ std::cout << address << std::endl;  // 0x16d06ee3c
 In this example, `address` is a pointer. `*address` is an operation called _pointer 
 deferencing_, it returns the value stored in the pointer.
 
-A special type of pointer is the _null pointer_, `nullptr`. It does not point to 
+A special type of pointer is the *null pointer*, `nullptr`. It does not point to 
 any address and can cause undefined behaviour when dereferenced.
 ```c++ title="Null pointer example"
 int *null_pointer = nullptr;
