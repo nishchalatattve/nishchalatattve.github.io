@@ -138,7 +138,7 @@ features = [
 ]
 
 
-font.text = "Inter"
+font.text = "IBM Plex Serif"
 font.code = "Jetbrains Mono"
 
 [[project.theme.palette]]
