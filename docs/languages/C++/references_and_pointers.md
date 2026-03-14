@@ -17,15 +17,3 @@ any address and can cause undefined behaviour when dereferenced.
 ```c++ title="Null pointer example"
 int *null_pointer = nullptr;
 ```
-## Memory management
-
-[//]: # (Memory allocated by standard declarations is automatically freed when the program )
-
-[//]: # (exits. But in C++, we can also allocate memory manually, but we must free it manually.)
-
-[//]: # (```c++ title="Manual memory allocation")
-
-[//]: # (int *ptr = new int&#40;4&#41;;)
-
-[//]: # (```)
-
