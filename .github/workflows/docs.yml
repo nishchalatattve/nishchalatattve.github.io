@@ -18,7 +18,7 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/checkout@v6
         with:
-          lfs: `true`
+          lfs: 'true'
       - uses: astral-sh/setup-uv@v7
       - run: uv run zensical build --clean
       - uses: actions/upload-pages-artifact@v4
