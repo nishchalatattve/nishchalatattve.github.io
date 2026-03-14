@@ -11,28 +11,22 @@ icon: lucide/container
   [uv]: https://docs.astral.sh/uv/
 
 ### Installation
-```commandline
+```shell
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 ### Uninstallation
-1. Clean up stored data:
-```commandline
+```shell title="1. Clean up stored data"
 uv cache clean
 rm -r "$(uv python dir)"
 rm -r "$(uv tool dir)"
 ```
 
-2. Remove the uv, uvx, and uvw binaries:
-```commandline
+```shell title="2. Remove the uv, uvx, and uvw binaries"
 rm ~/.local/bin/uv ~/.local/bin/uvx
 ```
 
-### Add packages
-```bash
-uv add --dev <package> # (1)! 
+### Start a project
+```shell
+uv init
 ```
-
-1. The `--dev` flag means the added package will is for development only.
-It will not be part of the requirement should the project be published as a package.
-
