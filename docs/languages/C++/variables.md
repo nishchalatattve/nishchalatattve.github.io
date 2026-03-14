@@ -7,8 +7,8 @@ Fundamental variable types in C++ are:
 - `char`
 - `bool`
 
-In C++, you can declare variables without a initial value. 
-```c++ title="Declaring variables without a initial value"
+In C++, you can declare variables without an initial value. 
+```c++ title="Declaring variables without an initial value"
 int x;
 ```
 However, this is discouraged as it leads to undefined behaviour.
@@ -16,7 +16,7 @@ However, this is discouraged as it leads to undefined behaviour.
 int x;
 std::cout << x << std::endl;
 ```
-!!! info "Output"
+!!! failure "Output"
     === "Ubuntu"
         ```text
         32767
@@ -26,3 +26,18 @@ std::cout << x << std::endl;
         ```text
         1
         ```
+!!! info "Bracket initiation"
+    
+    To prevent this undefined behavour, you may use **bracket initiation** for
+    variables without a good initial value.
+
+```c++ title="Bracket initiation"
+int x{};
+std::cout << x << std::endl;
+```
+
+!!! info "Output"
+
+    ```text
+    0
+    ```
