@@ -16,7 +16,7 @@ There is not a common standard for Markdown, but the following dialects are wort
 
   [GitHub flavour]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
   [GitLab flavour]: https://docs.gitlab.com/18.8/user/markdown/
-  [CommonMark]: https://commonmark.org/
+  [CommonMark]: https://spec.commonmark.org/0.31.2/
   [Zensical]: https://zensical.org/docs/authoring/markdown/
 
 ## Headers
