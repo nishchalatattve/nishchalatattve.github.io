@@ -26,6 +26,45 @@
     ```text
     128 = 0b10000000 = 0x80
     ```
+## Integer representation
+### Unsigned integer
+Unsigned integers are represented simply as binaries. For example, `0b0001` = `1`.
+Commonly, computer programs use 4 bytes to represent integers, therefore, for
+unsigned integer, the maximum number `int` can store is \(2 \times 10 ^{32} - 1\),
+which is approximately 4 bn.
+### 2's complement
+A common implementation of signed integer representation is *2's complement*. The
+procedure is as follows, 
+
+2. Write down the binary representation of the number without the negative sign.
+1. Chang the first bit to signals the sign: `0` for positive and `1` for negative.
+3. Flip the remaining bits: `0` => `1`, and vice versa.
+4. Add 1, discard any overflow digits.
+
+!!! example "Represent -7 in signed 4 bits"
+    We start with four empty bits
+    ```text title="Step 0"
+    _, _, _, _
+    ```
+    ```text title="Step 1"
+    0, 1, 1, 1
+    ```
+    ```text title="Step 2"
+    1, 1, 1, 1
+    ```
+    ```text title="Step 3"
+    1, 0, 0, 0
+    ```
+    ```text title="Step 3"
+    1, 0, 0, 1
+    ```
+??? question "Why use 2's complement?"
+    A naive way to represent a signed integer is to use the first bit to represent the 
+    sign and the rest to represent the magnitude. But this results in 0 having 2 
+    representations (`0b0000` and `0b1111` in 4-bit representation). 2's complement 
+    solves the problem (`0` is represented only as `0b0000`). Additonally, it has other 
+    niceties to reduce algorithmic complexity when implementing arithmetics.
+  
 
 ## Text encoding
 
