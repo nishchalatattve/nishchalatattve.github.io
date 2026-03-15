@@ -38,10 +38,10 @@ Traditionally, ASCII assigns a number (between 0 and 127) to each character.
 
     Common line terminations sequence are
     
-    | DEC  | Symbol 1 | Description     | Symbol 2 |
-    |------|----------|-----------------|----------|
-    | `10` | `LF`     | Line feed       | `\n`     |
-    | `13` | `CR`     | Carriage return | `\r`     |
+    | DEC  | Symbol 1 | Description     | Escape sequence |
+    |------|----------|-----------------|-----------------|
+    | `10` | `LF`     | Line feed       | `\n`            |
+    | `13` | `CR`     | Carriage return | `\r`            |
     
     This convention comes from old printers.
     > On old printers, \r, carriage return, sent the print head back to the start of 
@@ -62,10 +62,7 @@ Traditionally, ASCII assigns a number (between 0 and 127) to each character.
 
 
 See also:
+
 - [ASCII table]
 
   [ASCII table]:https://www.ascii-code.com/
-
-        
-
-    
