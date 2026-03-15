@@ -41,3 +41,13 @@ std::cout << x << std::endl;
     ```text
     0
     ```
+
+Here are the default values of fundamental types in C++.
+
+| Type     | Value |
+|----------|-------|
+| `int`    | `0`   |
+| `float`  | `0`   |
+| `double` | `0`   |
+| `char`   | `\0`  |
+| `bool`   | `0`   |
