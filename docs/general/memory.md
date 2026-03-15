@@ -67,6 +67,11 @@ procedure is as follows,
 For unsigned integer, the maximum number in 32-bits representation is
 \(2 \times 10 ^{32} - 1\), which is approximately 4 bn.
 For signed integer, that number reduces to about 2 bn (\(2 \times 10 ^{31} - 1\)).
+
+!!! note "Beyond 32-bits"
+
+    The maximal number of a signed integer a 64-bit system can represent is about 9
+    quintillion (\(9 \times 10^{18}\))
 ## Text encoding
 
 Traditionally, ASCII assigns a number (between 0 and 127) to each character.
