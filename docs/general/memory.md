@@ -30,14 +30,14 @@
 ### Unsigned integer
 Unsigned integers are represented simply as binaries. For example, `0b0001` = `1`.
 Commonly, computer programs use 4 bytes to represent integers, therefore, for
-unsigned integer, the maximum number `int` can store is \(2 \times 10 ^{32} - 1\),
-which is approximately 4 bn.
+unsigned integer, the maximum number in 32-bits representation is
+\(2 \times 10 ^{32} - 1\), which is approximately 4 bn.
 ### 2's complement
 A common implementation of signed integer representation is *2's complement*. The
 procedure is as follows, 
 
-2. Write down the binary representation of the number without the negative sign.
-1. Chang the first bit to signals the sign: `0` for positive and `1` for negative.
+1. Write down the binary representation of the number without the negative sign.
+2. Chang the first bit to signals the sign: `0` for positive and `1` for negative.
 3. Flip the remaining bits: `0` => `1`, and vice versa.
 4. Add 1, discard any overflow digits.
 
@@ -58,6 +58,7 @@ procedure is as follows,
     ```text title="Step 3"
     1, 0, 0, 1
     ```
+
 ??? question "Why use 2's complement?"
     A naive way to represent a signed integer is to use the first bit to represent the 
     sign and the rest to represent the magnitude. But this results in 0 having 2 
