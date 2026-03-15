@@ -55,6 +55,6 @@ do {
 
 !!! note "`while` vs `do-while`"
 
-    `while` loop is extry controlled: the content of the loop will be executed
+    `while` loop is entry controlled: the content of the loop will be executed
     only if the condition(s) is(are) met. `do-while` loops are exit controlled.
     The content is garanteed to be executed at least once.
