@@ -9,26 +9,17 @@ Fundamental types in Python are
 - `dict`
 
 However, Python is an interpreted language, so all variables are dynamically typed.
-```python title="Initialise a variable in python" linenums="1"
+```python title="Initialisation variables in Python" linenums="1"
 a = 99
 b = 1 + 2j
 c = "Hello"
 d = True
 ```
-We may use `type` to check the type of variables.
-```python title="Check the type of variables"
-a = 99
-type(a)
-```
-!!! info "Output"
-    ```text
-    int
-    ```
-Optionally, we can type hint the variable.
-```python title="Type hinting in python"
+Optionally, we can add type hint to the variable.
+```python title="Type hinting in Python" linenums="1"
 a: int = 123
 ```
-!!! failure "Bad declaration"
+??? failure "Bad declaration"
     Sometimes, we will see code like
     ```python linenums="1"
     a = int
@@ -36,4 +27,13 @@ a: int = 123
     In this case, we just assign `a` the class `int`. We can even type hint with `a`.
     ```python linenums="2"
     b: a = 99
+    ```
+We may use `type` to check the type of variables.
+```python title="Check the type of variables" linenums="1"
+a = 99
+type(a)
+```
+!!! info "Output"
+    ```text
+    int
     ```
