@@ -37,7 +37,7 @@ A common implementation of signed integer representation is *2's complement*. Th
 procedure is as follows, 
 
 1. Write down the binary representation of the number without the negative sign.
-2. Chang the first bit to signals the sign: `0` for positive and `1` for negative.
+2. Chang the first bit to signal the sign: `0` for positive and `1` for negative.
 3. Flip the remaining bits: `0` => `1`, and vice versa.
 4. Add 1, discard any overflow digits.
 
