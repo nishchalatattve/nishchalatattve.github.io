@@ -29,9 +29,6 @@
 ## Integer representation
 ### Unsigned integer
 Unsigned integers are represented simply as binaries. For example, `0b0001` = `1`.
-Commonly, computer programs use 4 bytes to represent integers, therefore, for
-unsigned integer, the maximum number in 32-bits representation is
-\(2 \times 10 ^{32} - 1\), which is approximately 4 bn.
 ### 2's complement
 A common implementation of signed integer representation is *2's complement*. The
 procedure is as follows, 
@@ -66,7 +63,10 @@ procedure is as follows,
     solves the problem (`0` is represented only as `0b0000`). Additonally, it has other 
     niceties to reduce algorithmic complexity when implementing arithmetics.
   
-
+### Maximal number in 32-bits representation
+For unsigned integer, the maximum number in 32-bits representation is
+\(2 \times 10 ^{32} - 1\), which is approximately 4 bn.
+For signed integer, that number reduces to about 2 bn (\(2 \times 10 ^{31} - 1\)).
 ## Text encoding
 
 Traditionally, ASCII assigns a number (between 0 and 127) to each character.
