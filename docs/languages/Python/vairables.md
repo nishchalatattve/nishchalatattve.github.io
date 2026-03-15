@@ -37,3 +37,7 @@ type(a)
     ```text
     int
     ```
+
+```python title="Digit seperators" linenums="1"
+a = 1_000_000
+```
