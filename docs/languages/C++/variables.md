@@ -62,7 +62,48 @@ The size of fundenmental types is implementation defined, but common values are
 | `bool`      | 1 byte  |
 
 ## `int`, `float`, and `double`
-```c++
-uint32_t a = 0b00000000000000000000000000000001;
-std::cout << a << std::endl;   
+### `int`
+We have seen the most basic int literal
+```c++ linenums="1"
+int a = 42;
 ```
+Additionally, we may use `'` to separate digits for readability.
+```c++ linenums="1"
+int a = 36'000'000;
+```
+Moreover, we may pass in digits as binary or hexadecimal.
+```c++ linenums="1"
+int a = 0x3fff; // 16383 in decimal
+int b = 0b0011111111111111; // Also 16383 in decimal
+```
+By default, `int` is signed 32-bits in C++. To signal the integer is unsigned, we
+may use `unsigned` (also 32-bits). In this case, we shall add suffix `u`.
+```c++ linenums="1"
+unsigned a = 42u;
+```
+To represent integers beyond 2 bn, (maximum of `int`), we may use the 64-bit signed
+integer, `long`. It can represent numbers up to 9 quintillion (18 zeros).
+In this case, we shall add suffix `l`.
+```c++ linenums="1"
+long a = 42l;
+```
+We can also use `unsigned long` etc., and add the corresponding suffix.
+```c++ linenums="1"
+unsigned long val_3 = 0776745ul;
+```
+
+#### Fixed width `int`
+
+Although we are almost garanteed to find `int` to be 32-bit, `long` to be 64-bit in
+most modern systems, it is not garanteed. To ensure a number to be of certain bits,
+we need to use **Fixed width integer types**.
+
+- `int64_t`
+- `uint32_t`
+- ...
+
+
+??? info "Equivalent types"
+
+    - `int`: `signed`
+    - `unsigned int`: `unsinged`
