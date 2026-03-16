@@ -1,7 +1,7 @@
 # GCP service references
 
 ## Compute Engine
-- [Confidential VM]
+### [Confidential VM]
 
   [Confidential VM]:https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview
 
