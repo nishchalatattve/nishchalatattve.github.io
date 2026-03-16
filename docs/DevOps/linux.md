@@ -34,11 +34,3 @@ tree -n --charset=ASCII -o tree.txt
 ### General 
 - [Linuxize](https://linuxize.com/) - Linux tutorials and guides
 - [`chmod`](https://opensource.com/article/19/8/linux-chmod-command) - File permissions
-
-### Docker
-- [Install Docker on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-- [Manage Docker as a non-root user for Ubuntu](https://docs.docker.com/engine/install/linux-postinstall/)
-
-
-
-

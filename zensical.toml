@@ -1,36 +1,36 @@
 [project]
 #nav = [
-#    "index.md",
+#    "ssh.md",
 #    {"General" = [
-#        "general/index.md",
+#        "general/ssh.md",
 #        "general/regex.md",
 #        {"Git" = [
-#            "general/Git/index.md",
+#            "general/Git/ssh.md",
 #            "general/Git/commit_message.md",
 #        ]},
 #    ]},
 #    {"Languages" = [
-#        "languages/index.md",
+#        "languages/ssh.md",
 #        {"Markdown" = [
-#            "languages/Markdown/index.md"
+#            "languages/Markdown/ssh.md"
 #        ]},
 #        {"C++" = [
-#            "languages/C++/index.md",
+#            "languages/C++/ssh.md",
 #            "languages/C++/environments.md",
 #            "languages/C++/style.md",
 #            {"Testing" = [
-#                "languages/C++/testing/index.md",
+#                "languages/C++/testing/ssh.md",
 #                "languages/C++/testing/doubles.md"
 #            ]},
 #        ]},
 #        {"Python" = [
-##            "languages/Python/index.md"
+##            "languages/Python/ssh.md"
 #            "languages/Python/environmets.md",
 #        ]},
 #    ]},
 #    {"Frameworks" = [
 #        {"Zensical" = [
-#            "toolchains/Zensical/index.md",
+#            "toolchains/Zensical/ssh.md",
 #            "toolchains/Zensical/others.md",
 #            "toolchains/Zensical/footnotes.md",
 #            "toolchains/Zensical/content_tabs.md",
@@ -38,38 +38,38 @@
 #        ]},
 #    ]} ,
 #    {"DevOps " = [
-#        "DevOps/index.md",
+#        "DevOps/ssh.md",
 #        {"GitLab" = [
-#            "DevOps/GitLab/index.md"
+#            "DevOps/GitLab/ssh.md"
 #        ]},
 #        {"Cloud" = [
-#            "DevOps/cloud/index.md",
+#            "DevOps/cloud/ssh.md",
 #            {"Azure" = [
-#                "DevOps/cloud/Azure/index.md",
+#                "DevOps/cloud/Azure/ssh.md",
 #            ]},
 #            {"GCP" = [
-#                "DevOps/cloud/GCP/index.md"
+#                "DevOps/cloud/GCP/ssh.md"
 #            ]},
 #        ]},
 #        {"Terraform" = [
-#            "DevOps/Terraform/index.md"
+#            "DevOps/Terraform/ssh.md"
 #        ]},
 #        {"Networking" = [
-#            "DevOps/networking/index.md",
+#            "DevOps/networking/ssh.md",
 #            {"nginx" = [
-#                "DevOps/networking/nginx/index.md",
+#                "DevOps/networking/nginx/ssh.md",
 #                "DevOps/networking/nginx/TLS configuration.md"
 #            ]},
 ##            {"Tailscale" = []},
 #            {"NordVPN" = [
-#                "DevOps/networking/NordVPN/index.md",
+#                "DevOps/networking/NordVPN/ssh.md",
 #            ]}
 #        ]},
 #        {"Linux" = [
-#            "DevOps/Linux/index.md",
+#            "DevOps/Linux/ssh.md",
 #        ]},
 #        {"SSH" = [
-#            "DevOps/SSH/index.md",
+#            "DevOps/SSH/ssh.md",
 #        ]},
 #    ]},
 #]
