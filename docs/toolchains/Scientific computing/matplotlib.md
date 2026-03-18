@@ -10,4 +10,3 @@ plt.errorbar(x, y, yerr=None, xerr=None)
 
 <figcaption>Image caption</figcaption>
 </figure>
-
