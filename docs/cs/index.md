@@ -1,3 +1,6 @@
+---
+title: CS
+---
 # Computer Science
 
 ## [MIME types]
