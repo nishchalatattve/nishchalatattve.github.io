@@ -1,5 +1,4 @@
-# General
-General bits about technology
+# Computer Science
 
 ## [MIME types]
 
