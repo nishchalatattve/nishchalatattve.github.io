@@ -1,5 +1,6 @@
 # Numpy
 
+## Basics
 ```python linenums="1" title="arange"
 # Definition
 np.arange(start, stop, step)
