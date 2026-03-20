@@ -1,13 +1,9 @@
 # Contributing
-This repo is made possible by Zensical.
+This reposiory is powered by Zensical.
 
 ## Styles
-For Markdown files, we follow the style in [Zensical docs].
 
-  [Zensical docs]: https://github.com/zensical/docs.
-  
 - The name of the file should be in kebab-case.
 - Avoid inline links. Instead, annotate the link below.
-- Use `bash` to refer to commands and omit the `$` sign.
+- Use `shell` to refer to commands and omit the `$` sign.
 - No icon on the index page.
-
