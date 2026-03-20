@@ -26,4 +26,4 @@ Pricing shown for London (`europe-west2`), in USD, monthly.
 | Hyperdisk Balanced | 0.091 | 1.46   | 2.91   | 5.82   |
 
 !!! info
-(\(64 + 16 \times 3 \)) GiB Hyperdisk Balanced would cost about $10 monthly.
+    (\(64 + 16 \times 3 \)) GiB Hyperdisk Balanced would cost about $10 monthly.

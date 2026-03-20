@@ -1,27 +1,31 @@
 # Numpy
 
-## Basics
-```python linenums="1" title="arange"
-# Definition
-np.arange(start, stop, step)
-
-
-# Example
-a = np.arange(0, 5, 1)
-print(a)
-```
-!!! info "Output"
-    ```text
-    array([0, 1, 2, 3, 4])
+## Array creation
+### `arange`
+=== "Definition"
+    ```python linenums="1"
+    np.arange(start, stop, step)
     ```
-```python linenums="1" title="linspace"
-# Definition
-numpy.linspace(start, stop, num=50, endpoint=True)
-
-# Example
-a = np.linspace(0, 5, 5)
-```
-!!! info "Output"
-    ```text
-    array([0.  , 1.25, 2.5 , 3.75, 5.  ])
+=== "Examples"
+    ```python linenums="1"
+    a = np.arange(0, 5, 1)
+    print(a)
     ```
+    !!! info "Output"
+        ```text
+        array([0, 1, 2, 3, 4])
+        ```
+
+### `linspace`
+=== "Definition"
+    ```python linenums="1"
+    np.linspace(start, stop, num=50, endpoint=True)
+    ```
+=== "Examples"
+    ```python linenums="1"
+    a = np.linspace(0, 5, 5)
+    ```
+    !!! info "Output"
+        ```text
+        array([0.  , 1.25, 2.5 , 3.75, 5.  ])
+        ```

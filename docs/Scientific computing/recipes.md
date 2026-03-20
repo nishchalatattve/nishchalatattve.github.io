@@ -1,6 +1,7 @@
 # Recipes
 
-```python linenums="1" title="Plot and find minimum value"
+## Plot and find minimum value
+```python linenums="1"
 import numpy as np
 import matplotlib.pyplot as plt
 
