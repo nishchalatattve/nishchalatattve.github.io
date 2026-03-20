@@ -1,7 +1,7 @@
 # Service references
 
 ```shell linenums="1" title="List all VMs"
-gcloud compute instances list --format="table(name, status)"
+gcloud compute instances list --filter="status=RUNNING"
 ```
 
 ## References
