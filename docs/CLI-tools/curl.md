@@ -1,5 +1,5 @@
 # `curl`
-```shell
+```shell linenums="1"
 curl -fsSL <url> -o <output_filename>
 # For example
 curl -fsSL \
