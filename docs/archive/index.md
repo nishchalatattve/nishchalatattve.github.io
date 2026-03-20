@@ -1,7 +1,7 @@
 ---
 title: CS
 ---
-# Computer Science
+# Archive
 
 ## [MIME types]
 
