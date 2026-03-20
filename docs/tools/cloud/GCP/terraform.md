@@ -1,4 +1,4 @@
-# Terraform google provider reference
+# Terraform google provider references
 
 ## [`google_compute_instance`][google_compute_instance]
 
