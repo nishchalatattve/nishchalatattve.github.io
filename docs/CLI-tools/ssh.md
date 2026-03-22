@@ -13,7 +13,7 @@
     
 === "For use with GitHub"
     ```shell linenums="1"
-    ssh-keygen -t ed25519 -f ~/.ssh/gitlab
+    ssh-keygen -t ed25519 -f ~/.ssh/github
     ```
 
 ## Modifying passphrase
