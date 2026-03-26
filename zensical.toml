@@ -74,7 +74,7 @@
 #    ]},
 #]
 
-site_name = "Notes"
+site_name = "Technical notes"
 site_url = "https://nishchalatattve.github.io/"
 site_description = "My notes."
 site_author = "Haoze Pang and contributors"
