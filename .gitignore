@@ -1,10 +1,11 @@
-# Python files
+# IDE
+.idea/
+*.sublime-workspace
+
+# Python
 .venv
 uv.lock
 
-# IDE and OS files
-.idea
-.cache
-
-# Built files
+# Zensical
 site
+.cache
