@@ -1,8 +1,8 @@
 # Markdown lexers
 
-## [`pygments`]
+## [pygments]
 
-  [`pygments`]: https://pygments.org/docs/lexers
+  [pygments]: https://pygments.org/docs/lexers
 
 This is used by Material for mkdocs and Zensical
 

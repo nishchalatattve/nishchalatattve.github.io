@@ -2,35 +2,29 @@
 
 ## Generate keys
 === "General"
-    ```console linenums="1"
-    ssh-keygen -t <type> -f ~/.ssh/<filename> -C <username>
+    ```console 
+    $ ssh-keygen -t <type> -f ~/.ssh/<filename> -C <username>
     ```
 
 === "For use with `gcloud compute ssh`"
-    ```shell linenums="1"
-    ssh-keygen -t rsa -f ~/.ssh/google_compute_engine -C ubuntu
+    ```console
+    $ ssh-keygen -t rsa -f ~/.ssh/google_compute_engine -C ubuntu
     ```
     
 === "For use with GitHub"
-    ```shell linenums="1"
-    ssh-keygen -t ed25519 -f ~/.ssh/github
+    ```console
+    $ ssh-keygen -t ed25519 -f ~/.ssh/github
     ```
 
 ## Modifying passphrase
-```shell linenums="1"
-ssh-keygen -p -f ~/.ssh/<filename>
+```console
+$ ssh-keygen -p -f ~/.ssh/<filename>
 ```
 
 ## Connect to remote
-=== "General"
-    ```shell linenums="1"
-    ssh -i ~/.ssh/<key_name> <username>@<instance_ip>
-    ```
-
-=== "GCP"
-    ```shell linenums="1"
-    gcloud compute ssh <username>@<instance_name>
-    ```
+```console
+$ ssh -i ~/.ssh/<key_name> <username>@<instance_ip>
+```
 ## Activate SSH agent
 ```shell linenums="1"
 eval `ssh-agent -s`
@@ -40,7 +34,7 @@ ssh -T git@github.com
 
 !!! info
     To avoid typing the above every time, add the following to `~/.ssh/config`.
-    ```text
+    ```text linenums="1"
     Host github.com
       User git
       IdentityFile ~/.ssh/github
