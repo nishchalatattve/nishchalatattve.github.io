@@ -1,5 +1,41 @@
 # git
 
+## General
+### Commit username and email
+#### Get username and emails
+```console title="Get username"
+$ git config --get user.name
+nishchalatattve
+```
+
+```console title="Get email"
+$ git config --get user.email 
+36802495+nishchalatattve@users.noreply.github.com
+```
+#### Set username and emails
+=== "Set locally (in `.git/config`)"
+    ```console title="Set username"
+    $ git config user.name "<username>"
+    ```
+
+    ```console title="Set email"
+    $ git config user.email "<email>"
+    ```
+
+=== "Set globally (in `~/.gitconfig`)"
+    ```console title="Set username"
+    $ git config --global user.name "<username>"
+    ```
+
+    ```console title="Set email"
+    $ git config --global user.email "<email>"
+    ```
+
+### Completely separate commit history
+When remote have a completely different commit history comparing to local, we cannot push directly. Instead, 
+```console 
+$ git pull <remote name> <remote branch> --allow-unrelated-histories
+```
 ## Remote
 ### Checking remotes
 ```console 
@@ -46,37 +82,6 @@ $ git remote set-url <remote_name> <new_remote_url>
 $ git remote rename <original_name> <new_name>
 ```
 
-## Commit username and email
-### Get username and emails
-```console title="Get username"
-$ git config --get user.name
-nishchalatattve
-```
-
-```console title="Get email"
-$ git config --get user.email 
-36802495+nishchalatattve@users.noreply.github.com
-```
-
-### Set username and emails
-=== "Set locally (in `.git/config`)"
-    ```console title="Set username"
-    $ git config user.name "<username>"
-    ```
-
-    ```console title="Set email"
-    $ git config user.email "<email>"
-    ```
-
-=== "Set globally (in `~/.gitconfig`)"
-    ```console title="Set username"
-    $ git config --global user.name "<username>"
-    ```
-
-    ```console title="Set email"
-    $ git config --global user.email "<email>"
-    ```
-
 ## Submodule
 ### Add submodule to existing projects
 ```shell linenums="1"
@@ -96,16 +101,17 @@ To update the submodule to the latest commit on the tracked branch, after an ups
 ```console
 $ git submodule update --remote
 ```
-
 ### Clone git repository with submodules
 ```console
 $ git clone --recurse-submodules <repo-url>
 ```
 
-## Completely separate commit history
-When remote have a completely different commit history comparing to local, we cannot push directly. Instead, 
-```console 
-$ git pull <remote name> <remote branch> --allow-unrelated-histories
+## [LFS]
+
+  [LFS]: https://git-lfs.com/
+
+```console
+$ git lfs track "*.pdf"
 ```
 
 ## References
@@ -113,10 +119,8 @@ $ git pull <remote name> <remote branch> --allow-unrelated-histories
 - [Pro Git]
 - [Oh Shit, Git!?!]
 - [Sign off commits]
-- [Git LFS]
     
   [Git]: https://git-scm.com/
   [Pro Git]: https://git-scm.com/book/en/v2
   [Oh Shit, Git!?!]: https://ohshitgit.com/
   [Sign off commits]:https://docs.gitlab.com/user/project/repository/signed_commits/ssh/
-  [Git LFS]: https://git-lfs.com/
