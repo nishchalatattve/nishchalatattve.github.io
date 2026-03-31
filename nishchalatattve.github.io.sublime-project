@@ -3,14 +3,7 @@
     [   
         {
             "path": ".",
-            "name": "root",
-            "follow_symlinks": true,
-        },
-
-        {
-            "path": "docs",
-            "name": "Technical notes",
-            "file_exclude_patterns": ["*.synctex.gz"],
+            "name": "Notes and snippets",
             "follow_symlinks": true,
         },
 

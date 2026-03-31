@@ -1,8 +1,8 @@
-# SSH 
+# ssh 
 
 ## Generate keys
 === "General"
-    ```shell linenums="1"
+    ```console linenums="1"
     ssh-keygen -t <type> -f ~/.ssh/<filename> -C <username>
     ```
 

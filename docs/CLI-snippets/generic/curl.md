@@ -1,12 +1,12 @@
 # `curl`
 === "Definition"
-    ```shell linenums="1"
-    curl -fsSL <url> -o <output_filename>
+    ```console linenums="1"
+    $ curl -fsSL <url> -o <output_filename>
     ```
 
 === "Example"
-    ```shell linenums="1"
-    curl -fsSL \
+    ```console linenums="1"
+    $ curl -fsSL \
     https://raw.githubusercontent.com/marzer/tomlplusplus/master/toml.hpp \
     -o toml.h
     ```

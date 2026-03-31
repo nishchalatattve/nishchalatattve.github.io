@@ -1,87 +1,14 @@
 [project]
-#nav = [
-#    "ssh.md",
-#    {"General" = [
-#        "general/ssh.md",
-#        "general/regex.md",
-#        {"Git" = [
-#            "general/Git/ssh.md",
-#            "general/Git/commit_message.md",
-#        ]},
-#    ]},
-#    {"Languages" = [
-#        "languages/ssh.md",
-#        {"Markdown" = [
-#            "languages/Markdown/ssh.md"
-#        ]},
-#        {"C++" = [
-#            "languages/C++/ssh.md",
-#            "languages/C++/environments.md",
-#            "languages/C++/style.md",
-#            {"Testing" = [
-#                "languages/C++/testing/ssh.md",
-#                "languages/C++/testing/doubles.md"
-#            ]},
-#        ]},
-#        {"Python" = [
-##            "languages/Python/ssh.md"
-#            "languages/Python/environmets.md",
-#        ]},
-#    ]},
-#    {"Frameworks" = [
-#        {"Zensical" = [
-#            "toolchains/Zensical/ssh.md",
-#            "toolchains/Zensical/others.md",
-#            "toolchains/Zensical/footnotes.md",
-#            "toolchains/Zensical/content_tabs.md",
-#            "toolchains/Zensical/icons.md"
-#        ]},
-#    ]} ,
-#    {"DevOps " = [
-#        "DevOps/ssh.md",
-#        {"GitLab" = [
-#            "DevOps/GitLab/ssh.md"
-#        ]},
-#        {"Cloud" = [
-#            "DevOps/cloud/ssh.md",
-#            {"Azure" = [
-#                "DevOps/cloud/Azure/ssh.md",
-#            ]},
-#            {"GCP" = [
-#                "DevOps/cloud/GCP/ssh.md"
-#            ]},
-#        ]},
-#        {"Terraform" = [
-#            "DevOps/Terraform/ssh.md"
-#        ]},
-#        {"Networking" = [
-#            "DevOps/networking/ssh.md",
-#            {"nginx" = [
-#                "DevOps/networking/nginx/ssh.md",
-#                "DevOps/networking/nginx/TLS configuration.md"
-#            ]},
-##            {"Tailscale" = []},
-#            {"NordVPN" = [
-#                "DevOps/networking/NordVPN/ssh.md",
-#            ]}
-#        ]},
-#        {"Linux" = [
-#            "DevOps/Linux/ssh.md",
-#        ]},
-#        {"SSH" = [
-#            "DevOps/SSH/ssh.md",
-#        ]},
-#    ]},
-#]
+# nav = []
 
-site_name = "Technical notes"
+site_name = "Notes and snippets"
 site_url = "https://nishchalatattve.github.io/"
-site_description = "My notes."
+site_description = "Notes and snippets"
 site_author = "Haoze Pang and contributors"
 
-repo_url = "https://github.com/nishchalatattve/nishchalatattve.github.io"
-edit_uri = "edit/main/docs/"
-repo_name = "nishchalatattve.github.io"
+# repo_url = "https://github.com/nishchalatattve/nishchalatattve.github.io"
+# edit_uri = "edit/main/docs/"
+# repo_name = "nishchalatattve.github.io"
 
 docs_dir = "docs"   # This is the default option, included here for clarity.
 site_dir = "site"   # This is the default option, included here for clarity.
@@ -92,9 +19,11 @@ Copyright &copy; 2026 The authors.
 """
 
 extra_javascript = [
-    "javascripts/mathjax.js",
-    "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"
+    "extra-js/mathjax.js",
+    "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
+    "extra-js/cleanup.js",
 ]
+extra_css = ["stylesheets/entra.css"]
 
 # === Theme ===
 [project.theme]

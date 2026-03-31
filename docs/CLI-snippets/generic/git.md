@@ -1,66 +1,33 @@
-# [Git]
-
-  [Git]: https://git-scm.com/
-## Tips
-### Completely separate commit history
-When you initialise a repository on remote (GitLab), and made several commits to edit README, it is now messy to push your local, which has a completely different commit history, to remote.
-To solve this issue.
-```shell
-git pull <remote name> <remote branch> --allow-unrelated-histories
-# For example,
-git pull personal main --allow-unrelated-histories
-```
-## Submodule
-### Add submodule to existing projects
-```shell
-git submodule add --depth 1 \ # (1)!
-<upstream_url> <submodule_name>
-# For example,
-git submodule add --depth 1 \
-https://github.com/marzer/tomlplusplus.git tomlplusplus 
-```
-
-1. `--depth 1` only downloads the latest commit.
-
-The above steps only clone the submodule locally to make it available to the 
-project,
-```shell
-git submodule init
-```
-### Update submodules
-To update the submodule to the latest commit on the tracked branch,
-```shell
-git submodule update --remote
-```
-To update the submodule to the latest commit tracked in the super repository
-```shell
-git submodule update --remote # (1)!
-# For example,
-git submodule update --remote --merge
-```
-
-1. This is usually performed after the upstream repository has been updated.
-
-### Clone git repository with submodules
-```shell
-git clone --recurse-submodules <repo-url>
-```
+# git
 
 ## Remote
 ### Checking remotes
-```shell  title="Check the URL of remotes"
-git remote -v 
+```shell linenums="1"
+git remote 
 ```
 ??? info "Output"
 
     ```text
-    origin  git@github.com:nishchalatattve/nishchalatattve.github.io.git (fetch)
-    origin  git@github.com:nishchalatattve/nishchalatattve.github.io.git (push)
+    * remote origin
+      Fetch URL: https://github.com/nishchalatattve/nishchalatattve.github.io.git
+      Push  URL: https://github.com/nishchalatattve/nishchalatattve.github.io.git
+      HEAD branch: main
+      Remote branch:
+        main tracked
+      Local branch configured for 'git pull':
+        main merges with remote main
+      Local ref configured for 'git push':
+        main pushes to main (up to date)
     ```
-
-```shell title="Dig further into a specific remote"
-git remote show origin
-```
+To dig further into a specific remote
+=== "Definition"
+    ```shell linenums="1"
+    git remote show <branch_shortname>
+    ```
+=== "Examples"
+    ```shell linenums="1"
+    git remote show origin
+    ```
 ??? info "Output"
 
     ```text
@@ -75,8 +42,11 @@ git remote show origin
       Local ref configured for 'git push':
       main pushes to main (up to date)
     ```
+
 ### Managing Remotes
 #### Adding a remote
+=== "Definition"
+=== "Examples"
 ```shell
 git remote add <remote_name> <remote_url>
 # For example,
@@ -139,15 +109,64 @@ git config --get user.email
     git config --global user.email "<email>"
     ```
 
+
+## Completely separate commit history
+When remote have a completely different commit history comparing to local, we cannot push directly. Instead, 
+=== "Definition"
+    ```shell linenums="1"
+    git pull <remote name> <remote branch> --allow-unrelated-histories
+## Submodule
+### Add submodule to existing projects
+```shell
+git submodule add --depth 1 \ # (1)!
+<upstream_url> <submodule_name>
+# For example,
+git submodule add --depth 1 \
+https://github.com/marzer/tomlplusplus.git tomlplusplus 
+```
+
+1. `--depth 1` only downloads the latest commit.
+
+The above steps only clone the submodule locally to make it available to the 
+project,
+```shell
+git submodule init
+```
+### Update submodules
+To update the submodule to the latest commit on the tracked branch,
+```shell
+git submodule update --remote
+```
+To update the submodule to the latest commit tracked in the super repository
+```shell
+git submodule update --remote # (1)!
+# For example,
+git submodule update --remote --merge
+```
+
+1. This is usually performed after the upstream repository has been updated.
+
+### Clone git repository with submodules
+```shell
+git clone --recurse-submodules <repo-url>
+```
+
+
+
+    
+=== "Examples"
+    ```shell linenums="1"
+    git pull personal main --allow-unrelated-histories
+
 ## References
+- [Git]
 - [Pro Git]
 - [Oh Shit, Git!?!]
 - [Sign off commits]
 - [Git LFS]
-
+    
+  [Git]: https://git-scm.com/
   [Pro Git]: https://git-scm.com/book/en/v2
   [Oh Shit, Git!?!]: https://ohshitgit.com/
   [Sign off commits]:https://docs.gitlab.com/user/project/repository/signed_commits/ssh/
   [Git LFS]: https://git-lfs.com/
-
-
