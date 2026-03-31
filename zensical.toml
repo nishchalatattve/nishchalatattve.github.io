@@ -1,50 +1,47 @@
 [project]
-# nav = []
-
+# Basic site settings 
 site_name = "Notes and snippets"
 site_url = "https://nishchalatattve.github.io/"
 site_description = "Notes and snippets"
 site_author = "Haoze Pang and contributors"
-
-# repo_url = "https://github.com/nishchalatattve/nishchalatattve.github.io"
-# edit_uri = "edit/main/docs/"
-# repo_name = "nishchalatattve.github.io"
-
-docs_dir = "docs"   # This is the default option, included here for clarity.
-site_dir = "site"   # This is the default option, included here for clarity.
-use_directory_urls = true   # This is the default option, included here for clarity.
-
 copyright = """
 Copyright &copy; 2026 The authors.
 """
 
+# Resosetory settings
+# repo_url = "https://github.com/nishchalatattve/nishchalatattve.github.io"
+# edit_uri = "edit/main/docs/"
+# repo_name = "nishchalatattve.github.io"
+
+# nav = []
+
+# Some default settings
+docs_dir = "docs"   # This is the default option, included here for clarity.
+site_dir = "site"   # This is the default option, included here for clarity.
+use_directory_urls = true   # This is the default option, included here for clarity.
+
+# Extra CSS and JS
 extra_javascript = [
     "extra-js/mathjax.js",
     "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
     "extra-js/cleanup.js",
 ]
 extra_css = ["stylesheets/entra.css"]
-
 # === Theme ===
 [project.theme]
-custom_dir = "overrides"
-favicon = "images/lightbulb.png"
-language = "en" # Read more at https://zensical.org/docs/setup/language/
 features = [
-    "announce.dismiss",
-
-    "content.action.edit",
-#    "content.action.view",
-
+# Code copy and annotation
     "content.code.annotate",
     "content.code.copy",
 
-    "content.tooltips",
-    "content.footnote.tooltips",
+# Generate view raw and edit button. Repository must be set (line 11)
+    "content.action.edit",
+#    "content.action.view",
 
-    "content.tabs.link",
+# Allow user to dismiss anouncement banner
+    # "announce.dismiss",
 
-#    === Navigation ===
+# Navigation features
     "navigation.tabs",
     "navigation.tabs.sticky",
     "navigation.sections",
@@ -53,20 +50,26 @@ features = [
 #    "navigation.prune",
     "navigation.footer",
     "navigation.path",
-
     "navigation.instant",
     "navigation.instant.prefetch",
-
     "navigation.top",   # A back-to-top button can be shown when the user, after scrolling down, starts to scroll up again.
     "navigation.tracking",  # Update URL to the current anchor
+    "toc.follow",
 
-
+# Search features
     "search.highlight",
 
-    "toc.follow",
+# Miscelaneous features
+    "content.tooltips", # Enable tooltips
+    "content.footnote.tooltips",    # Render footnote as tooltips
+    "content.tabs.link",    # Generate link for content tabs
 ]
+# custom_dir = "overrides"
+favicon = "images/lightbulb.png"
 
+language = "en" # Read more at https://zensical.org/docs/setup/language/
 
+# Fonts
 font.text = "IBM Plex Serif"
 font.code = "Jetbrains Mono"
 
@@ -88,7 +91,7 @@ repo = "fontawesome/brands/github"
 icon = "fontawesome/solid/anchor-circle-exclamation"
 link = "https://github.com/nishchalatattve/nishchalatattve.github.io/issues"
 
-# === Markdown extensions ===
+# Markdown extensions
 [project.markdown_extensions.abbr]
 [project.markdown_extensions.admonition]
 [project.markdown_extensions.attr_list]
@@ -121,5 +124,3 @@ kwds = { case = "lower" }
 [project.markdown_extensions.pymdownx.tasklist]
 custom_checkbox = true
 [project.markdown_extensions.pymdownx.tilde]
-
-
