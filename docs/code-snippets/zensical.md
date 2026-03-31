@@ -13,9 +13,6 @@
 ```
 ````
 
-## Code 
-
-
 ## Definition and examples
 ````md linenums="1"
 === "Definition"
