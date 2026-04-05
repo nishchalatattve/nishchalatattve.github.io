@@ -1,6 +1,6 @@
-# Notes
-This is a collection of my notes. 
-Currently, the notes are largely it is for my references only, and is a bit terse.
+# Notes and snippets
 
-If you found an error or have any suggestions, please feel free to create an issue or PR.
-
+> [IMPORTANT!]
+> The primary purpose of this repository is to provide a central place for 
+> the author quickly to get cli and code snippets. The sole audience of 
+> the website is the author.
