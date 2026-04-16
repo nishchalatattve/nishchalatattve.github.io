@@ -1,6 +1,7 @@
 ---
 title: Home
 ---
-# Notes and snippets on technology
+# Notes & snippets on technology
 
-This site was created primarily for the author to have easy access to reusable snippets.
+!!! note
+    The primary audience of the website is the author himself.

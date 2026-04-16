@@ -1,8 +1,8 @@
 [project]
 # Basic site settings 
-site_name = "Notes and snippets"
+site_name = "Notes & snippets on technology"
 site_url = "https://nishchalatattve.github.io/"
-site_description = "Notes and snippets"
+site_description = "Notes & snippets an technology"
 site_author = "Haoze Pang and contributors"
 copyright = """
 Copyright &copy; 2026 The authors.
@@ -26,7 +26,7 @@ extra_javascript = [
     "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
     "extra-js/cleanup.js",
 ]
-extra_css = ["stylesheets/entra.css"]
+extra_css = ["stylesheets/extra.css"]
 # === Theme ===
 [project.theme]
 features = [
@@ -100,6 +100,7 @@ link = "https://github.com/nishchalatattve/nishchalatattve.github.io/issues"
 [project.markdown_extensions.md_in_html]
 [project.markdown_extensions.toc]
 permalink = true
+toc_depth = 2
 [project.markdown_extensions.pymdownx.arithmatex]
 generic = true
 [project.markdown_extensions.pymdownx.betterem]

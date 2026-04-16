@@ -1,8 +1,7 @@
 # git
 
-## General
-### Commit username and email
-#### Get username and emails
+## Commit username and email
+### Get username and emails
 ```console title="Get username"
 $ git config --get user.name
 nishchalatattve
@@ -12,7 +11,7 @@ nishchalatattve
 $ git config --get user.email 
 36802495+nishchalatattve@users.noreply.github.com
 ```
-#### Set username and emails
+### Set username and emails
 === "Set locally (in `.git/config`)"
     ```console title="Set username"
     $ git config user.name "<username>"
@@ -31,11 +30,6 @@ $ git config --get user.email
     $ git config --global user.email "<email>"
     ```
 
-### Completely separate commit history
-When remote have a completely different commit history comparing to local, we cannot push directly. Instead, 
-```console 
-$ git pull <remote name> <remote branch> --allow-unrelated-histories
-```
 ## Remote
 ### Checking remotes
 ```console 
@@ -112,6 +106,14 @@ $ git clone --recurse-submodules <repo-url>
 
 ```console
 $ git lfs track "*.pdf"
+```
+
+
+## Miscellaneous
+### Completely separate commit history
+When remote have a completely different commit history comparing to local, we cannot push directly. Instead, 
+```console 
+$ git pull <remote name> <remote branch> --allow-unrelated-histories
 ```
 
 ## References

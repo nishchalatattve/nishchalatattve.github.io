@@ -16,7 +16,7 @@
     $ ssh-keygen -t ed25519 -f ~/.ssh/github
     ```
 
-## Modifying passphrase
+## Modify passphrase
 ```console
 $ ssh-keygen -p -f ~/.ssh/<filename>
 ```

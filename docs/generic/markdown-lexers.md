@@ -1,6 +1,4 @@
-# Markdown lexers
-
-## [pygments]
+# Markdown ([pygments]) lexers
 
   [pygments]: https://pygments.org/docs/lexers
 
