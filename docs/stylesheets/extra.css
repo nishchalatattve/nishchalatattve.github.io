@@ -3,3 +3,57 @@
   /* Generic.Prompt, Generic.Output */
   user-select: none;
 }
+
+/* Numbering for headings */
+/* Initialise counters */
+h1 {
+  counter-set: section 0 subsection 0 subsubsection 0;
+  
+}
+/* \section{} */
+h2 {
+  counter-increment: section;
+}
+h2::before {
+  content: counter(section) ". ";
+}
+/* \subsection{} */
+h3 {
+  counter-increment: subsection;
+}
+h3::before {
+  content: counter(section) "." counter(subsection) " ";
+}
+/* \subsubsection{} */
+h4 {
+  counter-increment: subsubsection;
+}
+h4::before {
+  content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+}
+
+/* Numbering for TOC */
+/* section */
+.md-nav--secondary > .md-nav__list > .md-nav__item {
+  counter-increment: section;
+}
+
+.md-nav--secondary > .md-nav__list > .md-nav__item > .md-nav__link .md-ellipsis::before {
+  content: counter(section) ". ";
+}
+
+/* subsection */
+.md-nav--secondary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item {
+  counter-increment: subsection;
+}
+.md-nav--secondary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link .md-ellipsis::before {
+  content: counter(section) "." counter(subsection) " ";
+}
+
+/* subsubsection */
+.md-nav--secondary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item {
+  counter-increment: subsubsection;
+}
+.md-nav--secondary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link .md-ellipsis::before {
+  content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+}
