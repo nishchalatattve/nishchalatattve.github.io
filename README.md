@@ -1,4 +1,4 @@
 # Notes & snippets an technology
 
-> [!IMPORTANT]
+> [!NOTE]
 > The primary audience of the website is the author himself.
