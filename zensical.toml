@@ -1,8 +1,8 @@
 [project]
 # Basic site settings 
-site_name = "Notes & snippets on technology"
+site_name = "Notes & references on technology"
 site_url = "https://nishchalatattve.github.io/"
-site_description = "Notes & snippets an technology"
+site_description = "Notes & references on technology"
 site_author = "Haoze Pang and contributors"
 copyright = """
 Copyright &copy; 2026 The authors.
