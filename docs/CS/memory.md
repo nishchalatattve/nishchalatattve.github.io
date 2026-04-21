@@ -26,6 +26,7 @@
     ```text
     128 = 0b10000000 = 0x80
     ```
+
 ## Integer representation
 ### Unsigned integer
 Unsigned integers are represented simply as binaries. For example, `0b0001` = `1`.
@@ -72,8 +73,8 @@ For signed integer, that number reduces to about 2 bn (\(2 \times 10 ^{31} - 1\)
 
     The maximal number of a signed integer a 64-bit system can represent is about 9
     quintillion (\(9 \times 10^{18}\))
-## Text encoding
 
+## Text encoding
 Traditionally, ASCII assigns a number (between 0 and 127) to each character.
 (0-31) are control characters, such as `\n` = `LF` = `Line feed` = `10` =
 `0b00001010`= `0x0a`. 32-126 are printable characters, for example `A` = `65` =
@@ -111,3 +112,13 @@ See also:
 - [ASCII table]
 
   [ASCII table]:https://www.ascii-code.com/
+
+## Stacks vs heaps
+
+- Stacks are LIFO.
+
+### References
+
+- [StackOverflow Q&A]
+
+  [StackOverflow Q&A]: https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap
