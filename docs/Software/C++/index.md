@@ -1,6 +1,6 @@
 # General topics
 
-## Variables
+## Basic types
 
 ### Introduction
 Fundamental variable types in C++ are:
@@ -109,6 +109,21 @@ we need to use **Fixed width integer types**.
     - `int`: `signed`
     - `unsigned int`: `unsinged`
 
+## Enumerators
+
+```cpp linenums="1" title="Example"
+enum priority = {LOW, NORMAL, HIGH}
+
+int main() {
+  enum Level a = NORMAL;
+  std::cout << a << std::endl;
+}
+```
+
+```text title="Output"
+1
+```
+
 ## Control flows 
 
 ### `if-else`
@@ -176,34 +191,40 @@ do {
 
 ## Classes
 
-## Copy constructor, copy assignment operator; move constructor, move assignment operator
+### Copy & move constructors and assignment operators
 ```cpp linenums="1"
 class Person {
-    char* name;
+private:
+    char* name_;
 
 public:
     Person(const char* n) {
-        name = new char[strlen(n) + 1];
-        strcpy(name, n);
+        name_ = new char[strlen(n) + 1];
+        strcpy(name_, n);
     }
 
-    // copy constructor
+    // Copy constructor
     Person(const Person& p) {
-        name = new char[strlen(p.name) + 1];
-        strcpy(name, p.name);
+        name = new char[strlen(p.name_) + 1];
+        strcpy(name_, p.name_);
     }
 
-    // copy assignment operator
+    // Copy assignment operator
     Person& operator=(const Person& p){
-        delete[] name;          
-        name = new char[strlen(p.name) + 1];  
-        strcpy(name, p.name);   
+        delete[] name_;          
+        name_ = new char[strlen(p.name_) + 1];  
+        strcpy(name_, p.name_);   
     }
 
-    // copy assignment operator
+    // Move constructor
+    Person(const Person&& p) noexcept {
+        name_ = new char[strlen(p.name_) + 1];
+        std::move()
+    }
+
 
     ~Person() {
-        delete[] name;
+        delete[] name_;
     }
 };
 
