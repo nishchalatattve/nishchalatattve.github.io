@@ -1,7 +1,4 @@
-# Markdown ([pygments]) lexers
-
-  [pygments]: https://pygments.org/docs/lexers
-
+# `pygments` lexers
 This is used by Material for mkdocs and Zensical
 
 | Languages     | Short names |
@@ -20,3 +17,9 @@ This is used by Material for mkdocs and Zensical
 | JSON          | `json`      |
 | TOML          | `toml`      |
 | YAML          | `yaml`      |
+
+## References
+
+- [Homepage] 
+
+  [Homepage]: https://pygments.org/docs/lexers
