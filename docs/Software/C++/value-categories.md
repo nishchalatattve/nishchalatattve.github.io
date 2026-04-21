@@ -45,3 +45,9 @@ An `rvalue` expression is either `prvalue` or `xvalue`.
 Properties:
 
 - An `rvalue` can't be used as the left-hand operand of the built-in assignment
+
+## References
+
+- [Homepage]
+
+  [Homepage]: https://en.cppreference.com/cpp/language/value_category

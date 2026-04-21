@@ -1,7 +1,5 @@
 # General topics
-
 ## Basic types
-
 ### Introduction
 Fundamental variable types in C++ are:
 
@@ -18,6 +16,7 @@ double c {};    // c = 0
 char d {};  // d = '\0'
 bool e {};  // e = 0
 ```
+
 ```c++ title="Initialising variables with custom values" linenums="1"
 int a = 9;    
 float b = 123.4; 
@@ -25,15 +24,19 @@ double c = 123.4;
 char d = "H";  
 bool e = true;  
 ```
+
 ??? failure "Declare variables without an initial value"
     In C++, you can declare variables without an initial value. 
+
     ```c++ linenums="1"
     int x;
     ```
     However, this is discouraged as it leads to undefined behaviour.
+
     ```c++ linenums="2"
     std::cout << x << std::endl;
     ```
+
     !!! info "Output"
         === "Ubuntu"
             ```text
@@ -47,15 +50,19 @@ bool e = true;
 
 We may check the size of variables with `sizeof`. It prints out the size of the
 variable in bytes.
+
 ```c++ title="Checking variable size" linenums="1"
 int a{};
 std::cout << sizeof(a) << std::endl;
 ```
+
 !!! info "Output"
+
     ```text
     4
     ```
-The size of fundenmental types is implementation defined, but common values are
+
+The size of fundamental types is implementation defined, but common values are
 
 | Type        | Size    |
 |-------------|---------|
@@ -67,36 +74,44 @@ The size of fundenmental types is implementation defined, but common values are
 
 ### `int`
 We have seen the most basic int literal
+
 ```c++ linenums="1"
 int a = 42;
 ```
 Additionally, we may use `'` to separate digits for readability.
+
 ```c++ linenums="1"
 int a = 36'000'000;
 ```
 Moreover, we may pass in digits as binary or hexadecimal.
+
 ```c++ linenums="1"
 int a = 0x3fff; // 16383 in decimal
 int b = 0b0011111111111111; // Also 16383 in decimal
 ```
+
 By default, `int` is signed 32-bits in C++. To signal the integer is unsigned, we
 may use `unsigned` (also 32-bits). In this case, we shall add suffix `u`.
+
 ```c++ linenums="1"
 unsigned a = 42u;
 ```
+
 To represent integers beyond 2 bn, (maximum of `int`), we may use the 64-bit signed
 integer, `long`. It can represent numbers up to 9 quintillion (18 zeros).
 In this case, we shall add suffix `l`.
+
 ```c++ linenums="1"
 long a = 42l;
 ```
+
 We can also use `unsigned long` etc., and add the corresponding suffix.
 ```c++ linenums="1"
 unsigned long val_3 = 0776745ul;
 ```
 
-Although we are almost garanteed to find `int` to be 32-bit, `long` to be 64-bit in
-most modern systems, it is not garanteed. To ensure a number to be of certain bits,
+Although we are almost guaranteed to find `int` to be 32-bit, `long` to be 64-bit in
+most modern systems, it is not guaranteed. To ensure a number to be of certain bits,
 we need to use **Fixed width integer types**.
 
 - `int64_t`
@@ -107,9 +122,10 @@ we need to use **Fixed width integer types**.
 ??? info "Equivalent types"
 
     - `int`: `signed`
-    - `unsigned int`: `unsinged`
+    - `unsigned int`: `unsigned`
 
-## Enumerators
+## Advanced types
+### Enumerators
 
 ```cpp linenums="1" title="Example"
 enum priority = {LOW, NORMAL, HIGH}
@@ -166,12 +182,14 @@ for (const int i: {1, 2, 3, 4, 5}) {
 ```
 
 ### `while`
+
 ```c++ linenums="1" title="while loop"
 int i = 0;
 while (i < 10) {
     std::cout << i++ << std::endl;
 }
 ```
+
 ```c++ linenums="1" title="do-while loop"
 int j = 0;
 do {
@@ -180,19 +198,16 @@ do {
 ```
 
 !!! note "`while` vs `do-while`"
-
     `while` loop is entry controlled: the content of the loop will be executed
     only if the condition(s) is(are) met. `do-while` loops are exit controlled.
     The content is garanteed to be executed at least once.
 
-
-
 ## Functions
-
 ## Classes
+### The rule of three/five/zero
+### Copy and move
 
-### Copy & move constructors and assignment operators
-```cpp linenums="1"
+```cpp linenums="1" title="A rule of five example"
 class Person {
 private:
     char* name_;
@@ -214,12 +229,23 @@ public:
         delete[] name_;          
         name_ = new char[strlen(p.name_) + 1];  
         strcpy(name_, p.name_);   
+
+        return *this;
     }
 
     // Move constructor
     Person(const Person&& p) noexcept {
         name_ = new char[strlen(p.name_) + 1];
-        std::move()
+        name_ = std::move(name_);
+    }
+
+    // Move assignment operator
+    Person& operator=(const Person &&p) noexcept{
+        delete[] name_;          
+        name_ = new char[strlen(p.name_) + 1];  
+        name_ = std::move(name_);
+        
+        return *this
     }
 
 
@@ -237,10 +263,16 @@ int main() {
 }
 ```
 
-### `const` member functions
+#### References
 
+- [Homepage]
+
+  [Homepage]: https://en.cppreference.com/cpp/language/rule_of_three
+
+### `const` member functions
 `const` member functions are functions which do not modify the object.
 For example, consider a class describing a radioactive source.
+
 ```c++
 class Source {
 private:
@@ -251,17 +283,21 @@ public:
   }
   [[nodiscard]] std::string name() const;
 ```
+
 In this setup, we have a getter that does not modify the object so it makes sense to mark it as `const`.
 `[[nodiscard]]` tells the compiler to issue a warning if the function is called 
 but the return value is not used.
 For example,
+
 ```c++
 Source source("Na-22");
 
 std::string name = source.name();   // This is ok.
 source.name();  // Compiler will issue a warning.
 ```
+
 ### References
+
 - [GeekforGeeks article]
 - [StackOverflow post]
 
@@ -282,6 +318,7 @@ int main() {
   return 0;
 }
 ```
+
 ```c++ title="function templates"  linenums="1"
 template <typename To, typename From>
 To Add(From a, From b) {
@@ -294,6 +331,7 @@ int main() {
   return 0;
 }
 ```
+
 ```c++ title="class templates" linenums="1"
 template <typename T>
 class Box {
@@ -316,13 +354,13 @@ int main() {
   return 0;
 }
 ```
-
 ## Memory management
-
 ### Manual memory allocation
+
 ```c++ title="Manual memory allocation with new"
 int* ptr = new int;
 ```
+
 This first `int` signals `ptr` points to an integer, while the second `int`
 tells to compiler to allocate memory space for an integer to `ptr`. Memory
 allocated via the `new` keyword must be mannually freed with `delete`.
@@ -342,7 +380,7 @@ int *address = &number;
 std::cout << address << std::endl;  // 0x16d06ee3c
 ```
 In this example, `address` is a pointer. `*address` is an operation called _pointer 
-deferencing_, it returns the value stored in the pointer.
+dereferencing_, it returns the value stored in the pointer.
 
 A special type of pointer is the *null pointer*, `nullptr`. It does not point to 
 any address and can cause undefined behaviour when dereferenced.
@@ -362,7 +400,6 @@ std::unique_ptr<LargeObject> pLarge(new LargeObject());
 - [Microsoft lean]
 
   [Microsoft learn]: https://learn.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp?view=msvc-170
-
 
 ## References
 - [An excellent post] that answers some of the common questions about C++.
