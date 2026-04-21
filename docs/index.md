@@ -1,7 +1,7 @@
 ---
 title: Home
 ---
-# Notes & snippets on technology
+# Haoze's notes
 
 !!! note
     The primary audience of the website is the author himself.

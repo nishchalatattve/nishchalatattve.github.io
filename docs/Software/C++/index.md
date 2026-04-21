@@ -1,0 +1,296 @@
+# General topics
+
+## Variables
+
+### Introduction
+Fundamental variable types in C++ are:
+
+- `int`
+- `float`
+- `double`
+- `char`
+- `bool`
+
+```c++ title="Initialising variables with default values" linenums="1"
+int a{};    // a = 0
+float b {}; // b = 0
+double c {};    // c = 0
+char d {};  // d = '\0'
+bool e {};  // e = 0
+```
+```c++ title="Initialising variables with custom values" linenums="1"
+int a = 9;    
+float b = 123.4; 
+double c = 123.4;    
+char d = "H";  
+bool e = true;  
+```
+??? failure "Declare variables without an initial value"
+    In C++, you can declare variables without an initial value. 
+    ```c++ linenums="1"
+    int x;
+    ```
+    However, this is discouraged as it leads to undefined behaviour.
+    ```c++ linenums="2"
+    std::cout << x << std::endl;
+    ```
+    !!! info "Output"
+        === "Ubuntu"
+            ```text
+            32767
+            ```
+        
+        === "macOS"
+            ```text
+            1
+            ```
+
+We may check the size of variables with `sizeof`. It prints out the size of the
+variable in bytes.
+```c++ title="Checking variable size" linenums="1"
+int a{};
+std::cout << sizeof(a) << std::endl;
+```
+!!! info "Output"
+    ```text
+    4
+    ```
+The size of fundenmental types is implementation defined, but common values are
+
+| Type        | Size    |
+|-------------|---------|
+| `int`       | 4 bytes |
+| `float`     | 4 bytes |
+| `double`    | 8 bytes |
+| `char`      | 1 byte  |
+| `bool`      | 1 byte  |
+
+### `int`
+We have seen the most basic int literal
+```c++ linenums="1"
+int a = 42;
+```
+Additionally, we may use `'` to separate digits for readability.
+```c++ linenums="1"
+int a = 36'000'000;
+```
+Moreover, we may pass in digits as binary or hexadecimal.
+```c++ linenums="1"
+int a = 0x3fff; // 16383 in decimal
+int b = 0b0011111111111111; // Also 16383 in decimal
+```
+By default, `int` is signed 32-bits in C++. To signal the integer is unsigned, we
+may use `unsigned` (also 32-bits). In this case, we shall add suffix `u`.
+```c++ linenums="1"
+unsigned a = 42u;
+```
+To represent integers beyond 2 bn, (maximum of `int`), we may use the 64-bit signed
+integer, `long`. It can represent numbers up to 9 quintillion (18 zeros).
+In this case, we shall add suffix `l`.
+```c++ linenums="1"
+long a = 42l;
+```
+We can also use `unsigned long` etc., and add the corresponding suffix.
+```c++ linenums="1"
+unsigned long val_3 = 0776745ul;
+```
+
+Although we are almost garanteed to find `int` to be 32-bit, `long` to be 64-bit in
+most modern systems, it is not garanteed. To ensure a number to be of certain bits,
+we need to use **Fixed width integer types**.
+
+- `int64_t`
+- `uint32_t`
+- ...
+
+
+??? info "Equivalent types"
+
+    - `int`: `signed`
+    - `unsigned int`: `unsinged`
+
+## Control flows 
+
+### `if-else`
+```c++ linenums="1" title="if-else statement"
+int a;
+std::cout << "Enter a number: ";
+std::cin >> a;
+
+if (constexpr int b = 0; a == 99) {
+    std::cout << "Congrats you hit the jackpot!" << std::endl;
+} else if (a > b) {
+    std::cout << a << " is greater than " << b << std::endl;
+} else if (a < b) {
+    std::cout << a << " is less than " << b << std::endl;
+} else {
+    std::cout << a << " is equal to " << b << std::endl;
+}
+```
+
+### `for`
+```c++ linenums="1" title="Postfix for loop"
+for (int i = 0; i < 5; i++) {
+    std::cout << i << std::endl;
+}
+```
+```c++ linenums="1" title="Prefix for loop"
+for (int i = 0; i < 5; ++i) {
+    std::cout << i << std::endl;
+}
+```
+
+!!! note "Prefix vs Postfix"
+    `a++` is known as postfix: add `1` to `a`, returns the *old* value. `++a` is 
+    known as prefix: add `1` to `a`, returns the *new* value. 
+
+```c++ linenums="1" title="Range-based for loop"
+for (const int i: {1, 2, 3, 4, 5}) {
+    std::cout << i << std::endl;
+}
+```
+
+### `while`
+```c++ linenums="1" title="while loop"
+int i = 0;
+while (i < 10) {
+    std::cout << i++ << std::endl;
+}
+```
+```c++ linenums="1" title="do-while loop"
+int j = 0;
+do {
+    std::cout << j++ << std::endl;
+} while (j < 5);
+```
+
+!!! note "`while` vs `do-while`"
+
+    `while` loop is entry controlled: the content of the loop will be executed
+    only if the condition(s) is(are) met. `do-while` loops are exit controlled.
+    The content is garanteed to be executed at least once.
+
+
+
+## Functions
+
+## Classes
+
+### `const` member functions
+
+`const` member functions are functions which do not modify the object.
+For example, consider a class describing a radioactive source.
+```c++
+class Source {
+private:
+  std::string name_{}; // Source name. e.g. Na-22, Cs-136, Co-92
+public:
+  Source(std::string name){
+      name_ = name;
+  }
+  [[nodiscard]] std::string name() const;
+```
+In this setup, we have a getter that does not modify the object so it makes sense to mark it as `const`.
+`[[nodiscard]]` tells the compiler to issue a warning if the function is called 
+but the return value is not used.
+For example,
+```c++
+Source source("Na-22");
+
+std::string name = source.name();   // This is ok.
+source.name();  // Compiler will issue a warning.
+```
+### References
+- [GeekforGeeks article]
+- [StackOverflow post]
+
+  [GeekforGeeks article]: https://www.geeksforgeeks.org/cpp/const-member-functions-c/
+  [StackOverflow post]: https://stackoverflow.com/questions/3141087/what-is-meant-with-const-at-end-of-function-declaration
+
+## Templates 
+
+```c++ title="function templates"  linenums="1"
+template <typename T>
+T Add(T a, T b) {
+  return a + b;
+}
+
+int main() {
+  std::cout << Add<int>(5, 3) << "\n";
+  std::cout << Add<double>(2.5, 1.5) << "\n";
+  return 0;
+}
+```
+```c++ title="function templates"  linenums="1"
+template <typename To, typename From>
+To Add(From a, From b) {
+  return a + b;
+}
+
+int main() {
+  std::cout << Add<int>(5, 3) << "\n";
+  std::cout << Add<double>(2.5, 1.5) << "\n";
+  return 0;
+}
+```
+```c++ title="class templates" linenums="1"
+template <typename T>
+class Box {
+  public:
+    T value;
+    Box(T v) {
+      value = v;
+    }
+    void show() {
+      std::cout << "Value: " << value << "\n";
+    }
+};
+
+int main() {
+  Box<int> int_box(50);
+  Box<std::string> str_box("Hello");
+
+  int_box.show();
+  str_box.show();
+  return 0;
+}
+```
+
+## Memory management
+
+### Manual memory allocation
+```c++ title="Manual memory allocation with new"
+int* ptr = new int;
+```
+This first `int` signals `ptr` points to an integer, while the second `int`
+tells to compiler to allocate memory space for an integer to `ptr`. Memory
+allocated via the `new` keyword must be mannually freed with `delete`.
+```c++ title="Freeing memory with delete"
+delete ptr;
+```
+### References and pointers
+Pointers are the memory address of an object.
+```c++ title="Baisc example of references and pointers"
+int number = 4;
+
+int &reference1 =  number;
+std::cout << reference1 << std::endl;    // Output: 4
+
+int *address = &number;
+std::cout << address << std::endl;  // 0x16d06ee3c
+```
+In this example, `address` is a pointer. `*address` is an operation called _pointer 
+deferencing_, it returns the value stored in the pointer.
+
+A special type of pointer is the *null pointer*, `nullptr`. It does not point to 
+any address and can cause undefined behaviour when dereferenced.
+```c++ title="Null pointer example"
+int *null_pointer = nullptr;
+```
+
+## References
+- [An excellent post] that answers some of the common questions about C++.
+- [Const correctness from ISOC++] 
+
+  [Const correctness from ISOC++]: https://isocpp.org/wiki/faq/const-correctness
+  [An excellent post]: https://news.ycombinator.com/item?id=16197127

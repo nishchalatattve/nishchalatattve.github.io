@@ -1,6 +1,3 @@
----
-icon: lucide/flask-conical
----
 # GoogleTest
 
 ## References

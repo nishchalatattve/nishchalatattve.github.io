@@ -13,6 +13,7 @@ h1 {
 /* \section{} */
 h2 {
   counter-increment: section;
+  counter-reset: subsection subsubsection;
 }
 h2::before {
   content: counter(section) ". ";

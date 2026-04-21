@@ -1,7 +1,4 @@
----
-icon: lucide/container
----
-# Set up an environment for C++ development
+# Set up environments
 C++ is a compiled language.
 The GNU Compiler Collection (GCC) is a set of compilers for programming languages,
 including C, C++, Assembly, and many more. It is the de facto standard in Linux

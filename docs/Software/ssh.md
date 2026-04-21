@@ -1,4 +1,4 @@
-# ssh 
+# SSH 
 
 ## Generate keys
 === "General"

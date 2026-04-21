@@ -1,4 +1,6 @@
-# Variables in python
+# General topics
+
+## Variables 
 Fundamental types in Python are
 
 - `int`

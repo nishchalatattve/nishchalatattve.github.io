@@ -1,4 +1,5 @@
-# Linux
+# Ubuntu
+
 ## [User management](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-20-04)
 To add a user
 ```bash
@@ -31,6 +32,6 @@ free -h
 tree -n --charset=ASCII -o tree.txt
 ```
 ## References
-### General 
+
 - [Linuxize](https://linuxize.com/) - Linux tutorials and guides
 - [`chmod`](https://opensource.com/article/19/8/linux-chmod-command) - File permissions

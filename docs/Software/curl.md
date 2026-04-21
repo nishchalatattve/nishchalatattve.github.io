@@ -1,8 +1,6 @@
 # `curl`
 
-## Download a file with curl
-
-```console 
+```console title="Download a file with curl"
 $ curl -fsSL <url> -o <output_filename>
 ```
 

@@ -1,6 +1,4 @@
-# [Conventional Commits]
-
-  [Conventional Commits]: https://www.conventionalcommits.org/en/v1.0.0/
+# Conventional Commits
 
 === "Definition"
     ```text linenums="1"
@@ -36,3 +34,11 @@ The commit description starts with lowercase and does not end with punctuation (
 ## `scope`
 A scope MAY be provided after a type. 
 A scope MUST consist of a noun describing a section of the codebase surrounded by parenthesis, e.g., fix(parser):
+
+## References
+
+- [Homepage]
+
+  [Homepage]: https://www.conventionalcommits.org/en/v1.0.0/
+
+  
