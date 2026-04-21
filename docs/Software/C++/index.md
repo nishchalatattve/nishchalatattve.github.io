@@ -176,6 +176,46 @@ do {
 
 ## Classes
 
+## Copy constructor, copy assignment operator; move constructor, move assignment operator
+```cpp linenums="1"
+class Person {
+    char* name;
+
+public:
+    Person(const char* n) {
+        name = new char[strlen(n) + 1];
+        strcpy(name, n);
+    }
+
+    // copy constructor
+    Person(const Person& p) {
+        name = new char[strlen(p.name) + 1];
+        strcpy(name, p.name);
+    }
+
+    // copy assignment operator
+    Person& operator=(const Person& p){
+        delete[] name;          
+        name = new char[strlen(p.name) + 1];  
+        strcpy(name, p.name);   
+    }
+
+    // copy assignment operator
+
+    ~Person() {
+        delete[] name;
+    }
+};
+
+int main() {
+    Person p1("Alice");
+    Person p2 = p1;   // deep copy
+
+    p1.display();
+    p2.display();
+}
+```
+
 ### `const` member functions
 
 `const` member functions are functions which do not modify the object.
@@ -270,6 +310,7 @@ delete ptr;
 ```
 ### References and pointers
 Pointers are the memory address of an object.
+
 ```c++ title="Baisc example of references and pointers"
 int number = 4;
 
@@ -284,9 +325,23 @@ deferencing_, it returns the value stored in the pointer.
 
 A special type of pointer is the *null pointer*, `nullptr`. It does not point to 
 any address and can cause undefined behaviour when dereferenced.
+
 ```c++ title="Null pointer example"
 int *null_pointer = nullptr;
 ```
+
+### Smart pointers
+
+```cpp linenums="1"
+std::unique_ptr<LargeObject> pLarge(new LargeObject());
+```
+
+#### References
+
+- [Microsoft lean]
+
+  [Microsoft learn]: https://learn.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp?view=msvc-170
+
 
 ## References
 - [An excellent post] that answers some of the common questions about C++.
