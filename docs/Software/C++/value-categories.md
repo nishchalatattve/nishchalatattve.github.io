@@ -2,10 +2,19 @@
 ## Introduction
 Each expression in C++ have two properties: a type and a *value category*.
 Here is an overview of the category type
-```mermaid
+
+``` mermaid
 graph TD
-  A[expression] --> B [glvalue]
+  A[Expression] --> B[glvalue]
+  A --> C[rvalue]
+
+  B --> D[lvalue]
+  B --> E[xvalue]
+
+  C --> E
+  C --> F[prvalue]
 ```
+
 ## Primary categories
 ### `prvalue`
 Expressions have `prvalue` if they perform 'computation' (`+, -, *, |, &, ...`) or initialise an object.
