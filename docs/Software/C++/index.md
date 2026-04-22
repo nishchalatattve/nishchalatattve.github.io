@@ -11,10 +11,10 @@ Fundamental variable types in C++ are:
 
 ```c++ title="Initialising variables with default values" linenums="1"
 int a{};    // a = 0
-float b {}; // b = 0
-double c {};    // c = 0
-char d {};  // d = '\0'
-bool e {};  // e = 0
+float b{}; // b = 0
+double c{};    // c = 0
+char d{};  // d = '\0'
+bool e{};  // e = 0
 ```
 
 ```c++ title="Initialising variables with custom values" linenums="1"
@@ -141,8 +141,8 @@ int main() {
 ```
 
 ## Control flows 
-
 ### `if-else`
+
 ```c++ linenums="1" title="if-else statement"
 int a;
 std::cout << "Enter a number: ";
@@ -160,11 +160,13 @@ if (constexpr int b = 0; a == 99) {
 ```
 
 ### `for`
+
 ```c++ linenums="1" title="Postfix for loop"
 for (int i = 0; i < 5; i++) {
     std::cout << i << std::endl;
 }
 ```
+
 ```c++ linenums="1" title="Prefix for loop"
 for (int i = 0; i < 5; ++i) {
     std::cout << i << std::endl;
@@ -202,10 +204,53 @@ do {
     only if the condition(s) is(are) met. `do-while` loops are exit controlled.
     The content is garanteed to be executed at least once.
 
+### Logical and comparison expressions
+
+```text linenums=1 title="Logical expressions"
+- a && b
+- a || b
+- !a
+```
+
+```text linenums=1 title="Comparison expressions"
+- a == b, a != b
+- a > b, a < b
+- a >= b, a <= b
+```
+
 ## Functions
+### Passing by references
+
+The following code results in error: ambiguous function call.
+
+```cpp linenums=1
+int compute(int &a) {
+    return a + 10;
+}
+
+int compute(int a) {
+    return a + 10;
+}
+
+int main() {
+    int b{99};
+    std::cout << compute(b) << std::endl;
+}
+```
+
 ## Classes
+### Member Initializer List
+
+```cpp linenums=1
+struct S
+{
+    S(): m{42} {}
+    S(int a): m{a} {}
+    int m;
+};
+```
+
 ### The rule of three/five/zero
-### Copy and move
 
 ```cpp linenums="1" title="A rule of five example"
 class Person {
@@ -370,7 +415,7 @@ delete ptr;
 ### References and pointers
 Pointers are the memory address of an object.
 
-```c++ title="Baisc example of references and pointers"
+```c++ title="Basic example of references and pointers"
 int number = 4;
 
 int &reference1 =  number;
@@ -379,6 +424,7 @@ std::cout << reference1 << std::endl;    // Output: 4
 int *address = &number;
 std::cout << address << std::endl;  // 0x16d06ee3c
 ```
+
 In this example, `address` is a pointer. `*address` is an operation called _pointer 
 dereferencing_, it returns the value stored in the pointer.
 
@@ -401,6 +447,8 @@ std::unique_ptr<LargeObject> pLarge(new LargeObject());
 
   [Microsoft learn]: https://learn.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp?view=msvc-170
 
+### Move semantics
+A special function `std::move()` takes in a `rvalue` as an argument and turns it into a `xvalue`.
 ## References
 - [An excellent post] that answers some of the common questions about C++.
 - [Const correctness from ISOC++] 

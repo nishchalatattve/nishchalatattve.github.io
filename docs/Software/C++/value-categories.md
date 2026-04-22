@@ -27,9 +27,9 @@ Here are some examples of `prvalue`
 ### `xvalue` and `lvalue`
 To introduce `xvalue` and `lvalue`, we first need to present `glvalue`. `glvalue` is an expression whose evaluation determines the values of an object. `xvalue` is a `glvalue` that denotes an object whose resource can be used. For example, 
 
+- `std::move()`
 - `a[i]`
 - `a.m`
-- `std::move`
 
 `lvalue` is a `glvalue` that does not have a `xvalue`. For example,
 
