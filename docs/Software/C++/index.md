@@ -399,53 +399,49 @@ int main() {
   return 0;
 }
 ```
-## Memory management
-### Manual memory allocation
 
-```c++ title="Manual memory allocation with new"
+## Memory management
+Pointers are the memory address of an object.
+
+```c++ linenums="1"
+int num = 4;
+
+int* ptr = &num; // ptr is a pointer
+std::cout << ptr << std::endl;  // Output: 0x16d06ee3c
+```
+
+We may access the value stored in `ptr` by _pointer 
+dereferencing_,`*ptr`. `*ptr` returns the value stored in the pointer.
+
+```cpp linenums="5"
+std::cout << *ptr << std::endl;  // Output: 4
+```
+
+By declaring a raw pointer, we manually allocate memory in our program.
+
+```c++ linenums="1"
 int* ptr = new int;
 ```
 
 This first `int` signals `ptr` points to an integer, while the second `int`
 tells to compiler to allocate memory space for an integer to `ptr`. Memory
-allocated via the `new` keyword must be mannually freed with `delete`.
-```c++ title="Freeing memory with delete"
+allocated via the `new` keyword must be manually freed with `delete`.
+
+```c++ linenums="2"
 delete ptr;
 ```
-### References and pointers
-Pointers are the memory address of an object.
 
-```c++ title="Basic example of references and pointers"
-int number = 4;
-
-int &reference1 =  number;
-std::cout << reference1 << std::endl;    // Output: 4
-
-int *address = &number;
-std::cout << address << std::endl;  // 0x16d06ee3c
-```
-
-In this example, `address` is a pointer. `*address` is an operation called _pointer 
-dereferencing_, it returns the value stored in the pointer.
-
-A special type of pointer is the *null pointer*, `nullptr`. It does not point to 
-any address and can cause undefined behaviour when dereferenced.
-
-```c++ title="Null pointer example"
-int *null_pointer = nullptr;
-```
-
-### Smart pointers
+In modern c++, raw pointers are rarely used. Instead, smart pointers are preferred as they handle memory deallocation for us.
 
 ```cpp linenums="1"
 std::unique_ptr<LargeObject> pLarge(new LargeObject());
 ```
 
-#### References
+### References
 
-- [Microsoft lean]
+- [Microsoft lean's article about smart pointers]
 
-  [Microsoft learn]: https://learn.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp?view=msvc-170
+  [Microsoft lean's article about smart pointers]: https://learn.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp?view=msvc-170
 
 ### Move semantics
 A special function `std::move()` takes in a `rvalue` as an argument and turns it into a `xvalue`.
