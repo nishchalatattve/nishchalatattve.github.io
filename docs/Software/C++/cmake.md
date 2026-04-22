@@ -13,6 +13,39 @@ $ cmake --build build
 $ ./build/hello
 ```
 
+## Common CMLs
+
+```text linenums=1 title="Building an executable"
+add_executable(MyProgram)
+
+target_sources(MyProgram
+  PRIVATE
+    main.ccc
+)
+```
+
+```text linenums=1 title="Building a library"
+add_library(MyLibrary)
+
+target_sources(MyLibrary
+  PRIVATE
+    library_implementation.cc
+
+  PUBLIC
+    FILE_SET HEADERS
+    BASE_DIRS
+      include
+    FILES
+      include/library_header.h
+)
+```
+
+```text linenums=1 title="Linking together libraries and executables"
+target_link_libraries(MyProgram
+        MyLibrary
+)
+```
+
 ## References
 
 - [Tutorial]
