@@ -24,3 +24,11 @@
 
 !!! Result
     ![Result](figures/diff-macros.png)
+
+### References
+
+- [Stackoverflow]
+- [Joe Wright]
+
+  [Stackoverflow]: https://tex.stackexchange.com/questions/98152/always-use-newdocumentcommand-instead-of-newcommand
+  [Joe Wright]: https://www.texdev.net/2010/05/23/from-newcommand-to-newdocumentcommand/
