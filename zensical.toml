@@ -38,8 +38,8 @@ features = [
     "content.action.edit",
 #    "content.action.view",
 
-# Allow user to dismiss anouncement banner
-    # "announce.dismiss",
+# Allow user to dismiss announcement banner
+    "announce.dismiss",
 
 # Navigation features
     "navigation.tabs",
@@ -64,7 +64,7 @@ features = [
     "content.footnote.tooltips",    # Render footnote as tooltips
     "content.tabs.link",    # Generate link for content tabs
 ]
-# custom_dir = "overrides"
+custom_dir = "overrides"
 favicon = "images/lightbulb.png"
 
 language = "en" # Read more at https://zensical.org/docs/setup/language/
