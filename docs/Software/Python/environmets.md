@@ -1,4 +1,4 @@
-# Set up an environment 
+# Manage python runtime and packages
 ## uv
 
 ### Installation
